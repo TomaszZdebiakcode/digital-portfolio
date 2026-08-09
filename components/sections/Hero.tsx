@@ -1,7 +1,7 @@
 "use client";
+import BottleField from "@/components/hero/BottleField";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ArrowRight, Swords } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 import { useLanguage } from "@/context/LanguageContext";
 import DeveloperCard from "@/components/shared/DeveloperCard";
@@ -66,13 +66,17 @@ export default function Hero() {
 
     return (
         <section className="relative min-h-screen overflow-hidden">
+            {/* Background */}
+            <div className="absolute inset-0 z-0">
+                <BottleField />
+            </div>
+
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/70" />
+            <div className="absolute inset-0 z-[1] bg-black/20" />
 
             <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 pt-16 pb-20">
                 <div className="grid w-full -translate-y-5 items-center gap-8 lg:grid-cols-[1fr_0.9fr]">
 
-                    {/* LEFT */}
                     {/* LEFT */}
                     <div className="flex max-w-xl flex-col items-start text-left">
 
