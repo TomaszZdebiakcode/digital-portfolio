@@ -16,7 +16,7 @@ const en = {
         description2: "that people",
         descriptionHighlight2: "remember.",
 
-        button: "Contact on LinkedIn",
+        button: "Contact me on LinkedIn",
 
         story: "Read My Story",
     },

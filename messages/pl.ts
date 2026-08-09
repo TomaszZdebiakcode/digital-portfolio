@@ -16,7 +16,7 @@ const pl = {
         description2: "które ludzie",
         descriptionHighlight2: "zapamiętują.",
 
-        button: "Skontaktuj się na LinkedIn",
+        button: "Kontakt do LinkedIn",
 
         story: "Poznaj moją historię",
     },

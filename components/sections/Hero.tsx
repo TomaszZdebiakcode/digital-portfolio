@@ -113,36 +113,37 @@ export default function Hero() {
 
                         {/* CTA */}
                         <a
-                            href="https://linkedin.com/in/TWOJ-LINK"
+                            href="https://www.linkedin.com/in/zdebiaktomasz/?locale=pl"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="
-            mt-12
-            inline-flex
-            h-13
-            w-[300px]
-            items-center
-            justify-center
-            gap-2
-            whitespace-nowrap
-            rounded-xl
-            bg-violet-500
-            px-4
-            text-sm
-            font-bold
-            uppercase
-            tracking-[0.12em]
-            text-white
-            transition-all
-            duration-300
-            hover:-translate-y-1
-            hover:bg-violet-400
-            hover:shadow-xl
-            hover:shadow-violet-500/20
-        "
+    mt-12
+    inline-flex
+    h-13
+    w-[260px]
+    sm:w-[300px]
+    items-center
+    justify-center
+    gap-2
+    whitespace-nowrap
+    rounded-xl
+    bg-violet-500
+    px-4
+    text-sm
+    font-bold
+    uppercase
+    tracking-[0.12em]
+    text-white
+    transition-all
+    duration-300
+    hover:-translate-y-1
+    hover:bg-violet-400
+    hover:shadow-xl
+    hover:shadow-violet-500/20
+"
                         >
                             <FaLinkedin className="h-4 w-4 shrink-0" />
-                            <span>Contact me on LinkedIn</span>
+                            <span>{t.hero.button}</span>
                         </a>
 
                         {/* Story */}
