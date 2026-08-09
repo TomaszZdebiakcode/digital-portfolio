@@ -88,3 +88,24 @@ body {
   animation-fill-mode: both;
   will-change: transform;
 }
+@keyframes mobileBottleFloat {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translate3d(12px, -18px, 0) rotate(4deg);
+    }
+}
+
+@keyframes mobileCanFloat {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0) rotate(3deg);
+    }
+
+    50% {
+        transform: translate3d(-14px, -16px, 0) rotate(-5deg);
+    }
+}

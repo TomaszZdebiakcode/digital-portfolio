@@ -166,10 +166,9 @@ export default function BottleField() {
                     <Component
                         key={`${item.type}-${index}`}
                         className={`
-    absolute
-    ${item.className}
-    ${index >= 4 ? "hidden sm:block" : ""}
-`}
+        absolute
+        ${item.className}
+    `}
                         style={
                             {
                                 animationName,

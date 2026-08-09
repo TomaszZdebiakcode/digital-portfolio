@@ -1,5 +1,6 @@
 "use client";
 import BottleField from "@/components/hero/BottleField";
+import MobileBottleField from "@/components/hero/MobileBottleField";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
@@ -69,6 +70,7 @@ export default function Hero() {
             {/* Background */}
             <div className="absolute inset-0 z-0">
                 <BottleField />
+                <MobileBottleField />
             </div>
 
             {/* Overlay */}
