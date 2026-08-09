@@ -40,7 +40,7 @@ export function LanguageProvider({
     useEffect(() => {
         const saved = localStorage.getItem("language") as Language | null;
 
-        if (saved) {
+        if (saved === "en" || saved === "pl" || saved === "de") {
             setLanguage(saved);
         }
     }, []);
@@ -66,7 +66,9 @@ export function useLanguage() {
     const context = useContext(LanguageContext);
 
     if (!context) {
-        throw new Error("useLanguage must be used inside LanguageProvider");
+        throw new Error(
+            "useLanguage must be used inside LanguageProvider"
+        );
     }
 
     return context;

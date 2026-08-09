@@ -91,10 +91,73 @@ const en = {
                 boss: "Boss #01",
                 status: "Defeated",
 
-                name: "Developer Journey",
+                name: "TomekGardens",
 
                 description:
-                    "A portfolio documenting my journey from Game Software Engineering student to Software Engineer while building real-world products.",
+                    "My own gardening business and website, built with React to showcase my services, present my work and make it easy for customers to get in touch.",
+
+                difficulty: 5,
+
+                image: "/images/tomekgardens.webp",
+
+                imagePosition: "object-[center_70%] lg:object-[center_50%]",
+
+                rewardsTitle: "Rewards Unlocked",
+
+                battleButton: "Visit Website",
+
+                hoverButton: "Explore?",
+
+                sourceButton: "Visit TomekGardens",
+
+                href: "https://tomekgardens.com",
+
+                socialLinks: [
+                    {
+                        label: "Instagram",
+                        href: "https://www.instagram.com/tomekgardens/",
+                        icon: "instagram",
+                    },
+                    {
+                        label: "Facebook",
+                        href: "https://www.facebook.com/tomekgardens",
+                        icon: "facebook",
+                    },
+                    {
+                        label: "TikTok",
+                        href: "https://www.tiktok.com/@tomekgardens",
+                        icon: "tiktok",
+                    },
+                ],
+
+                skills: [
+                    {
+                        icon: "entrepreneurship",
+                        label: "Entrepreneurship",
+                    },
+                    {
+                        icon: "advertising",
+                        label: "Advertising",
+                    },
+                    {
+                        icon: "gardening",
+                        label: "Gardening",
+                    },
+                    {
+                        icon: "product",
+                        label: "Product Creation",
+                    },
+                ],
+            },
+
+            {
+                boss: "Boss #02",
+                status: "Defeated",
+
+                name: "Digital Portfolio",
+
+                description:
+                    "My personal digital portfolio showcasing my projects, technical skills and journey as a software engineer.",
 
                 difficulty: 5,
 
@@ -110,24 +173,21 @@ const en = {
 
                 href: "/boss/developer-journey",
 
-                github: "#",
+                github: "https://github.com/TomaszZdebiakcode/digital-portfolio",
 
                 skills: [
                     {
                         icon: "react",
                         label: "React",
                     },
-
                     {
                         icon: "next",
                         label: "Next.js",
                     },
-
                     {
                         icon: "tailwind",
                         label: "Tailwind CSS",
                     },
-
                     {
                         icon: "responsive",
                         label: "Responsive UI",
@@ -136,8 +196,7 @@ const en = {
             },
 
             {
-                boss: "Boss #02",
-
+                boss: "Boss #03",
                 status: "Defeated",
 
                 name: "Slimter",
@@ -153,14 +212,13 @@ const en = {
 
                 rewardsTitle: "Rewards Unlocked",
 
-                battleButton: "Enter Battle",
+                battleButton: "Visit Website",
+                hoverButton: "Explore?",
 
-                hoverButton: "Ready?",
+                historyButton: "Read Story",
+                historyHref: "/boss/slimter",
 
-                sourceButton: "Source Code",
-
-                href: "/boss/slimter",
-
+                href: "https://slimter.com",
                 github: "#",
 
                 skills: [
@@ -168,71 +226,17 @@ const en = {
                         icon: "wordpress",
                         label: "WordPress",
                     },
-
                     {
                         icon: "javascript",
                         label: "JavaScript",
                     },
-
                     {
                         icon: "css",
                         label: "CSS",
                     },
-
                     {
                         icon: "accessibility",
                         label: "Accessibility",
-                    },
-                ],
-            },
-
-            {
-                boss: "Boss #03",
-
-                status: "Defeated",
-
-                name: "Warehouse Pathfinder",
-
-                description:
-                    "A Python project implementing A* and BFS algorithms to visualize intelligent warehouse robot navigation.",
-
-                difficulty: 3,
-
-                image: "/images/warehouse.webp",
-
-                imagePosition: "object-[33%_center]",
-
-                rewardsTitle: "Rewards Unlocked",
-
-                battleButton: "Enter Battle",
-
-                hoverButton: "Ready?",
-
-                sourceButton: "Source Code",
-
-                href: "/boss/warehouse-pathfinder",
-
-                github: "#",
-
-                skills: [
-                    {
-                        icon: "python",
-                        label: "Python",
-                    },
-
-                    {
-                        icon: "astar",
-                        label: "A* Algorithm",
-                    },
-
-                    {
-                        icon: "bfs",
-                        label: "BFS",
-                    },
-
-                    {
-                        icon: "testing",
-                        label: "Unit Testing",
                     },
                 ],
             },
@@ -291,110 +295,6 @@ const en = {
         },
     },
 
-    achievements: {
-        section: "Achievements",
-
-        title: "Quest Progress.",
-
-        description:
-            "Every project, every challenge and every lesson moves me one step closer to my ultimate goal.",
-
-        unlocked: "Unlocked",
-
-        progress: "Current Quest",
-
-        locked: "Locked",
-
-        items: [
-            {
-                title: "First React Application",
-
-                description:
-                    "Built my first real React project.",
-
-                status: "unlocked",
-
-                icon: "Trophy",
-            },
-
-            {
-                title: "First WordPress Website",
-
-                description:
-                    "Designed and launched Slimter.",
-
-                status: "unlocked",
-
-                icon: "Trophy",
-            },
-
-            {
-                title: "Next.js Portfolio",
-
-                description:
-                    "Created my Developer Journey portfolio.",
-
-                status: "unlocked",
-
-                icon: "Trophy",
-            },
-
-            {
-                title: "First Client Website",
-
-                description:
-                    "Build and deliver my first website for a paying client.",
-
-                status: "unlocked",
-
-                icon: "Briefcase",
-            },
-
-            {
-                title: "First Software Engineering Job",
-
-                description:
-                    "Land my first Software Engineering role.",
-
-                status: "progress",
-
-                icon: "Briefcase",
-            },
-
-            {
-                title: "Launch First SaaS",
-
-                description:
-                    "Build and release my own software product.",
-
-                status: "locked",
-
-                icon: "Rocket",
-            },
-
-            {
-                title: "Build My Own Company",
-
-                description:
-                    "Create a software company and help businesses grow.",
-
-                status: "locked",
-
-                icon: "Building2",
-            },
-
-            {
-                title: "100 Happy Clients",
-
-                description:
-                    "Deliver value to over 100 satisfied clients.",
-
-                status: "locked",
-
-                icon: "Users",
-            },
-        ],
-    },
 
 
     contact: {

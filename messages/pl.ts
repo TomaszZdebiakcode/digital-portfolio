@@ -79,30 +79,93 @@ const pl = {
     },
 
     bossBattles: {
-        section: "Boss Battles",
+        section: "Projekty",
 
-        title: "Każdy boss pokonany.",
+        title: "Każdy projekt ukończony.",
 
         description:
-            "Każdy projekt wyprowadził mnie poza strefę komfortu. Każda walka z bossem odblokowała nowe umiejętności, które uczyniły mnie lepszym inżynierem.",
+            "Każdy projekt wykraczał poza moją strefę komfortu. Każde wyzwanie pozwoliło mi zdobyć nowe umiejętności i stać się lepszym inżynierem oprogramowania.",
 
         projects: [
             {
                 boss: "Boss #01",
-                status: "Pokonany",
+                status: "Ukończony",
 
-                name: "Developer Journey",
+                name: "TomekGardens",
 
                 description:
-                    "Portfolio dokumentujące moją drogę od studenta Game Software Engineering do Software Engineera poprzez tworzenie prawdziwych projektów.",
+                    "Mój własny biznes ogrodniczy i strona internetowa stworzona w React, która prezentuje moje usługi, realizacje i ułatwia klientom kontakt.",
+
+                difficulty: 5,
+
+                image: "/images/tomekgardens.webp",
+
+                imagePosition: "object-[center_70%] lg:object-[center_50%]",
+
+                rewardsTitle: "Zdobyte umiejętności",
+
+                battleButton: "Odwiedź stronę",
+
+                hoverButton: "Odkryj?",
+
+                sourceButton: "TomekGardens",
+
+                href: "https://tomekgardens.com",
+
+                socialLinks: [
+                    {
+                        label: "Instagram",
+                        href: "https://www.instagram.com/tomekgardens/",
+                        icon: "instagram",
+                    },
+                    {
+                        label: "Facebook",
+                        href: "https://www.facebook.com/tomekgardens",
+                        icon: "facebook",
+                    },
+                    {
+                        label: "TikTok",
+                        href: "https://www.tiktok.com/@tomekgardens",
+                        icon: "tiktok",
+                    },
+                ],
+
+                skills: [
+                    {
+                        icon: "entrepreneurship",
+                        label: "Przedsiębiorczość",
+                    },
+                    {
+                        icon: "advertising",
+                        label: "Marketing",
+                    },
+                    {
+                        icon: "gardening",
+                        label: "Ogrodnictwo",
+                    },
+                    {
+                        icon: "product",
+                        label: "Tworzenie produktów",
+                    },
+                ],
+            },
+
+            {
+                boss: "Boss #02",
+                status: "Ukończony",
+
+                name: "Digital Portfolio",
+
+                description:
+                    "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne oraz rozwój jako inżyniera oprogramowania.",
 
                 difficulty: 5,
 
                 image: "/images/developer-journey.webp",
 
-                rewardsTitle: "Zdobyte Umiejętności",
+                rewardsTitle: "Zdobyte umiejętności",
 
-                battleButton: "Wejdź do walki",
+                battleButton: "Zobacz projekt",
 
                 hoverButton: "Gotowy?",
 
@@ -110,24 +173,36 @@ const pl = {
 
                 href: "/boss/developer-journey",
 
-                github: "#",
+                github: "https://github.com/TomaszZdebiakcode/digital-portfolio",
 
                 skills: [
-                    { icon: "react", label: "React" },
-                    { icon: "next", label: "Next.js" },
-                    { icon: "tailwind", label: "Tailwind CSS" },
-                    { icon: "responsive", label: "Responsive UI" },
+                    {
+                        icon: "react",
+                        label: "React",
+                    },
+                    {
+                        icon: "next",
+                        label: "Next.js",
+                    },
+                    {
+                        icon: "tailwind",
+                        label: "Tailwind CSS",
+                    },
+                    {
+                        icon: "responsive",
+                        label: "Responsywny UI",
+                    },
                 ],
             },
 
             {
-                boss: "Boss #02",
-                status: "Pokonany",
+                boss: "Boss #03",
+                status: "Ukończony",
 
                 name: "Slimter",
 
                 description:
-                    "Strona WordPress poświęcona edukacji na temat otyłości, pomagająca użytkownikom porównywać metody leczenia w dostępny i responsywny sposób.",
+                    "Strona internetowa oparta na WordPressie, poświęcona edukacji na temat otyłości i porównywaniu metod leczenia, z naciskiem na dostępność i responsywność.",
 
                 difficulty: 4,
 
@@ -135,58 +210,34 @@ const pl = {
 
                 imagePosition: "object-[40%_center]",
 
-                rewardsTitle: "Zdobyte Umiejętności",
+                rewardsTitle: "Zdobyte umiejętności",
 
-                battleButton: "Wejdź do walki",
+                battleButton: "Odwiedź stronę",
+                hoverButton: "Odkryj?",
 
-                hoverButton: "Gotowy?",
+                historyButton: "Przeczytaj historię",
+                historyHref: "/boss/slimter",
 
-                sourceButton: "Kod źródłowy",
-
-                href: "/boss/slimter",
-
+                href: "https://slimter.com",
                 github: "#",
 
                 skills: [
-                    { icon: "wordpress", label: "WordPress" },
-                    { icon: "javascript", label: "JavaScript" },
-                    { icon: "css", label: "CSS" },
-                    { icon: "accessibility", label: "Accessibility" },
-                ],
-            },
-
-            {
-                boss: "Boss #03",
-                status: "Pokonany",
-
-                name: "Warehouse Pathfinder",
-
-                description:
-                    "Projekt w Pythonie implementujący algorytmy A* oraz BFS do wizualizacji inteligentnej nawigacji robota magazynowego.",
-
-                difficulty: 3,
-
-                image: "/images/warehouse.webp",
-
-                imagePosition: "object-[33%_center]",
-
-                rewardsTitle: "Zdobyte Umiejętności",
-
-                battleButton: "Wejdź do walki",
-
-                hoverButton: "Gotowy?",
-
-                sourceButton: "Kod źródłowy",
-
-                href: "/boss/warehouse-pathfinder",
-
-                github: "#",
-
-                skills: [
-                    { icon: "python", label: "Python" },
-                    { icon: "astar", label: "Algorytm A*" },
-                    { icon: "bfs", label: "BFS" },
-                    { icon: "testing", label: "Testy jednostkowe" },
+                    {
+                        icon: "wordpress",
+                        label: "WordPress",
+                    },
+                    {
+                        icon: "javascript",
+                        label: "JavaScript",
+                    },
+                    {
+                        icon: "css",
+                        label: "CSS",
+                    },
+                    {
+                        icon: "accessibility",
+                        label: "Dostępność",
+                    },
                 ],
             },
         ],
@@ -242,111 +293,6 @@ const pl = {
                 "Process optimization",
             ],
         },
-    },
-
-    achievements: {
-        section: "Osiągnięcia",
-
-        title: "Postęp Misji.",
-
-        description:
-            "Każdy projekt, każde wyzwanie i każda zdobyta lekcja przybliżają mnie do osiągnięcia mojego celu.",
-
-        unlocked: "Odblokowane",
-
-        progress: "Aktualna Misja",
-
-        locked: "Zablokowane",
-
-        items: [
-            {
-                title: "Pierwsza aplikacja React",
-
-                description:
-                    "Stworzyłem swój pierwszy prawdziwy projekt w React.",
-
-                status: "unlocked",
-
-                icon: "Trophy",
-            },
-
-            {
-                title: "Pierwsza strona WordPress",
-
-                description:
-                    "Zaprojektowałem i uruchomiłem stronę Slimter.",
-
-                status: "unlocked",
-
-                icon: "Trophy",
-            },
-
-            {
-                title: "Portfolio w Next.js",
-
-                description:
-                    "Stworzyłem portfolio Developer Journey.",
-
-                status: "unlocked",
-
-                icon: "Trophy",
-            },
-
-            {
-                title: "Pierwsza strona dla klienta",
-
-                description:
-                    "Stworzyć i dostarczyć pierwszą stronę internetową dla płacącego klienta.",
-
-                status: "unlocked",
-
-                icon: "Briefcase",
-            },
-
-            {
-                title: "Pierwsza praca jako Software Engineer",
-
-                description:
-                    "Zdobyć pierwszą pracę jako Software Engineer.",
-
-                status: "progress",
-
-                icon: "Briefcase",
-            },
-
-            {
-                title: "Uruchomienie pierwszego SaaS",
-
-                description:
-                    "Stworzyć i opublikować własny produkt software'owy.",
-
-                status: "locked",
-
-                icon: "Rocket",
-            },
-
-            {
-                title: "Założenie własnej firmy",
-
-                description:
-                    "Stworzyć firmę software'ową i pomagać przedsiębiorstwom się rozwijać.",
-
-                status: "locked",
-
-                icon: "Building2",
-            },
-
-            {
-                title: "100 zadowolonych klientów",
-
-                description:
-                    "Dostarczyć wartość ponad 100 zadowolonym klientom.",
-
-                status: "locked",
-
-                icon: "Users",
-            },
-        ],
     },
 
 
