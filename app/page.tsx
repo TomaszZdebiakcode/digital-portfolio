@@ -4,8 +4,6 @@ import About from "@/components/sections/About";
 import SkillTree from "@/components/sections/SkillTree";
 import BossBattles from "@/components/boss/BossBattles";
 import Inventory from "@/components/sections/Inventory";
-import Achievements from "@/components/sections/Achievements";
-import QuestLog from "@/components/sections/QuestLog";
 import Contact from "@/components/sections/Contact";
 import HashScrollHandler from "@/components/utils/HashScrollHandler";
 
@@ -31,10 +29,6 @@ export default function Home() {
       <BossBattles />
 
       <Inventory />
-
-      <Achievements />
-
-      <QuestLog />
 
       <Contact />
 

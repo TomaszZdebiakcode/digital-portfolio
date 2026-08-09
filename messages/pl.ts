@@ -1,9 +1,9 @@
 const pl = {
     navbar: {
-        about: "O mnie",
-        inventory: "Ekwipunek",
-        projects: "Projekty",
-        contact: "Porozmawiajmy",
+        about: "O MNIE",
+        inventory: "ARSENAŁ",
+        projects: "PROJEKTY",
+        contact: "POROZMAWIAJMY",
     },
 
     hero: {
@@ -193,23 +193,55 @@ const pl = {
     },
 
     inventory: {
-        section: "Ekwipunek",
-
-        title: "Odblokowane Umiejętności.",
-
+        section: "ARSENAŁ",
+        title: "Narzędzia, które zamieniam w przewagę.",
         description:
-            "Każdy projekt odblokował nowe narzędzia, technologie i sposoby myślenia. Mój ekwipunek rośnie z każdą kolejną walką z bossem.",
+            "Łączę AI, automatyzację i dobre wdrożenia, żeby szybciej budować produkty i eliminować powtarzalną pracę.",
 
-        frontend: "Frontend",
+        ai: {
+            title: "AI",
+            description:
+                "Wykorzystuję AI jako część codziennego workflow — od analizy problemów i prototypowania po rozwój produktu i pracę z dokumentacją.",
+            tags: [
+                "AI-assisted development",
+                "Prompting",
+                "Prototyping",
+            ],
+        },
 
-        backend: "Backend",
+        automation: {
+            title: "Automation",
+            description:
+                "Automatyzuję powtarzalne zadania, integracje i przepływy pracy, żeby ograniczyć ręczną pracę i odzyskać czas.",
+            tags: [
+                "Workflows",
+                "APIs",
+                "Integrations",
+            ],
+        },
 
-        tools: "Narzędzia",
+        implementation: {
+            title: "Implementation",
+            description:
+                "Przekładam pomysły na działające produkty — od pierwszego prototypu przez integrację aż po wdrożenie.",
+            tags: [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "WordPress",
+            ],
+        },
 
-        currentQuest: "Aktualna Misja",
-
-        currentQuestDescription:
-            "Zostać Software Engineerem, tworzyć produkty, pomagać firmom się rozwijać i zbudować własną firmę software'ową.",
+        optimization: {
+            title: "Optimization",
+            description:
+                "Szukam miejsc, w których można uprościć proces, skrócić czas wykonania zadania i poprawić sposób pracy.",
+            tags: [
+                "Performance",
+                "UX",
+                "Process optimization",
+            ],
+        },
     },
 
     achievements: {
@@ -317,113 +349,6 @@ const pl = {
         ],
     },
 
-    questLog: {
-        section: "Dziennik Misji",
-
-        title: "Moja Dotychczasowa Podróż.",
-
-        description:
-            "Każdy projekt to kolejna ukończona misja. Każde wyzwanie odblokowało nowe umiejętności i przybliżyło mnie o krok do zostania inżynierem, którym chcę być.",
-
-        completed: "Ukończono",
-
-        current: "Aktualna Misja",
-
-        locked: "Zablokowane",
-
-        items: [
-            {
-                year: "2023",
-
-                title: "Rozpoczęcie studiów z Game Software Engineering",
-
-                description:
-                    "Rozpocząłem studia z inżynierii oprogramowania ze specjalizacją w tworzeniu gier i podstawach programowania.",
-
-                status: "completed",
-
-                icon: "GraduationCap",
-            },
-
-            {
-                year: "2026",
-
-                title: "Stworzenie Slimter",
-
-                description:
-                    "Stworzyłem stronę WordPress poświęconą edukacji na temat otyłości i zdrowego stylu życia, rozwijając umiejętności UX oraz Responsive Design.",
-
-                status: "completed",
-
-                icon: "Globe",
-            },
-
-            {
-                year: "2026",
-
-                title: "Warehouse Pathfinder",
-
-                description:
-                    "Zaimplementowałem algorytmy wyszukiwania ścieżki A* i BFS wraz z wizualizacją oraz testami w Pythonie.",
-
-                status: "completed",
-
-                icon: "Boxes",
-            },
-
-            {
-                year: "2026",
-
-                title: "Developer Journey",
-
-                description:
-                    "Stworzyłem gamifikowane portfolio w React, Next.js i Tailwind CSS prezentujące moje projekty oraz umiejętności.",
-
-                status: "completed",
-
-                icon: "Rocket",
-            },
-
-            {
-                year: "TERAZ",
-
-                title: "Pierwsza strona dla klienta",
-
-                description:
-                    "Pracuję nad stworzeniem i dostarczeniem pierwszej komercyjnej strony internetowej dla płacącego klienta.",
-
-                status: "completed",
-
-                icon: "Briefcase",
-            },
-
-            {
-                year: "KOLEJNY CEL",
-
-                title: "Pierwsza praca jako Software Engineer",
-
-                description:
-                    "Dołączyć do profesjonalnego zespołu Software Engineering i rozwijać się jako programista.",
-
-                status: "current",
-
-                icon: "Flag",
-            },
-
-            {
-                year: "PRZYSZŁOŚĆ",
-
-                title: "Założenie własnej firmy software'owej",
-
-                description:
-                    "Tworzyć produkty, systemy i rozwijać firmę software'ową pomagającą przedsiębiorstwom osiągać wzrost.",
-
-                status: "locked",
-
-                icon: "Rocket",
-            },
-        ],
-    },
 
     contact: {
         section: "Ostatni Boss",

@@ -1,9 +1,9 @@
 const en = {
     navbar: {
-        about: "About",
-        inventory: "Inventory",
-        projects: "Projects",
-        contact: "Let's Talk",
+        about: "ABOUT",
+        inventory: "ARSENAL",
+        projects: "PROJECTS",
+        contact: "LET'S TALK",
     },
 
     hero: {
@@ -240,23 +240,55 @@ const en = {
     },
 
     inventory: {
-        section: "Inventory",
-
-        title: "Skills I've Unlocked.",
-
+        section: "ARSENAL",
+        title: "Tools I turn into an advantage.",
         description:
-            "Every project unlocked new tools, technologies and ways of thinking. My inventory keeps growing with every boss battle.",
+            "I combine AI, automation and solid implementation to build products faster and eliminate repetitive work.",
 
-        frontend: "Frontend",
+        ai: {
+            title: "AI",
+            description:
+                "I use AI as part of my everyday workflow — from problem analysis and prototyping to product development and documentation.",
+            tags: [
+                "AI-assisted development",
+                "Prompting",
+                "Prototyping",
+            ],
+        },
 
-        backend: "Backend",
+        automation: {
+            title: "Automation",
+            description:
+                "I automate repetitive tasks, integrations and workflows to reduce manual work and save time.",
+            tags: [
+                "Workflows",
+                "APIs",
+                "Integrations",
+            ],
+        },
 
-        tools: "Tools",
+        implementation: {
+            title: "Implementation",
+            description:
+                "I turn ideas into working products — from the first prototype through integration and deployment.",
+            tags: [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "WordPress",
+            ],
+        },
 
-        currentQuest: "Current Quest",
-
-        currentQuestDescription:
-            "Become a Software Engineer, build products, help businesses grow, and launch my own software company.",
+        optimization: {
+            title: "Optimization",
+            description:
+                "I look for ways to simplify processes, reduce execution time and improve how work gets done.",
+            tags: [
+                "Performance",
+                "UX",
+                "Process optimization",
+            ],
+        },
     },
 
     achievements: {
@@ -364,113 +396,6 @@ const en = {
         ],
     },
 
-    questLog: {
-        section: "Quest Log",
-
-        title: "My Journey So Far.",
-
-        description:
-            "Every project represents another quest completed. Every challenge unlocked new skills and brought me one step closer to becoming the engineer I want to be.",
-
-        completed: "Completed",
-
-        current: "Current Quest",
-
-        locked: "Locked",
-
-        items: [
-            {
-                year: "2023",
-
-                title: "Started Game Software Engineering",
-
-                description:
-                    "Began my journey studying software engineering with a focus on game development and programming fundamentals.",
-
-                status: "completed",
-
-                icon: "GraduationCap",
-            },
-
-            {
-                year: "2026",
-
-                title: "Built Slimter",
-
-                description:
-                    "Created a WordPress website focused on obesity education and healthier lifestyles while improving UX and responsive design skills.",
-
-                status: "completed",
-
-                icon: "Globe",
-            },
-
-            {
-                year: "2026",
-
-                title: "Warehouse Pathfinder",
-
-                description:
-                    "Implemented A* and BFS pathfinding algorithms with Python visualization and testing.",
-
-                status: "completed",
-
-                icon: "Boxes",
-            },
-
-            {
-                year: "2026",
-
-                title: "Developer Journey",
-
-                description:
-                    "Built a gamified portfolio with React, Next.js and Tailwind CSS to showcase projects and skills.",
-
-                status: "completed",
-
-                icon: "Rocket",
-            },
-
-            {
-                year: "NOW",
-
-                title: "First Client Website",
-
-                description:
-                    "Working towards delivering my first commercial website for a paying client.",
-
-                status: "completed",
-
-                icon: "Briefcase",
-            },
-
-            {
-                year: "NEXT",
-
-                title: "First Software Engineering Job",
-
-                description:
-                    "Join a professional software engineering team and continue growing as a developer.",
-
-                status: "current",
-
-                icon: "Flag",
-            },
-
-            {
-                year: "FUTURE",
-
-                title: "Launch My Software Company",
-
-                description:
-                    "Build products, systems and a software business helping companies grow.",
-
-                status: "locked",
-
-                icon: "Rocket",
-            },
-        ],
-    },
 
     contact: {
         section: "Final Boss",
