@@ -1,5 +1,6 @@
 "use client";
 
+import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
 
 type DeveloperCardProps = {
@@ -9,20 +10,21 @@ type DeveloperCardProps = {
 export default function DeveloperCard({
     started,
 }: DeveloperCardProps) {
+    const { t } = useLanguage();
+
     return (
         <div
             className={`
                 fixed
                 z-50
-
                 bottom-4
                 left-4
                 right-4
 
                 md:left-auto
-md:right-8
-md:bottom-8
-md:w-[360px]
+                md:right-8
+                md:bottom-8
+                md:w-[360px]
 
                 transition-all
                 duration-700
@@ -50,14 +52,15 @@ md:w-[360px]
                         </h3>
 
                         <p className="mt-2 text-sm text-zinc-400">
-                            Game Software Engineering
+                            Game Software Engineer
                             <br />
 
                             <span className="mt-2 inline-flex items-center gap-6 text-green-400">
                                 <span className="flex items-center gap-2">
                                     <span className="h-2 w-2 rounded-full bg-green-400" />
+
                                     <span className="text-xs font-medium">
-                                        Open to Work
+                                        {t.developerCard.availability}
                                     </span>
                                 </span>
 
@@ -69,6 +72,6 @@ md:w-[360px]
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     );
 }

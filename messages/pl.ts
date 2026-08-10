@@ -161,7 +161,9 @@ const pl = {
 
                 difficulty: 5,
 
-                image: "/images/developer-journey.webp",
+                image: "/images/digitalcreator.webp",
+
+                imagePosition: "object-[30%_center]",
 
                 rewardsTitle: "Zdobyte umiejętności",
 
@@ -310,6 +312,111 @@ const pl = {
 
         emailButton: "Wyślij Email",
     },
+
+    slimterStory: {
+        back: "Wróć do projektów",
+
+        eyebrow: "Historia projektu",
+        status: "Ukończony",
+
+        title: "Slimter",
+        intro:
+            "Strona WordPress skupiona na przedstawianiu informacji o otyłości i metodach leczenia w sposób przejrzysty, uporządkowany i łatwy do zrozumienia.",
+
+        visitWebsite: "Odwiedź stronę",
+
+        skills: [
+            {
+                icon: "wordpress",
+                label: "WordPress",
+            },
+            {
+                icon: "javascript",
+                label: "JavaScript",
+            },
+            {
+                icon: "css",
+                label: "CSS",
+            },
+            {
+                icon: "accessibility",
+                label: "Dostępność",
+            },
+        ],
+
+        challenge: {
+            eyebrow: "Wyzwanie",
+            title: "Przekształcenie złożonych informacji w przejrzyste doświadczenie.",
+            description:
+                "Slimter został zaprojektowany jako platforma prezentująca informacje edukacyjne dotyczące otyłości i metod leczenia w uporządkowany i przystępny sposób. Projekt łączy rozbudowane treści z interaktywnymi narzędziami pozwalającymi użytkownikom analizować informacje i porównywać różne możliwości.",
+            points: [
+                "Przejrzysta struktura informacji i nawigacja",
+                "Responsywny interfejs na desktopie, tablecie i mobile",
+                "Interaktywne narzędzia do porównywania i obliczeń",
+                "Dostępny interfejs i czytelna prezentacja treści",
+            ],
+        },
+
+        gallery: {
+            eyebrow: "Strona internetowa",
+            title: "Od informacji do interakcji.",
+            description:
+                "Projekt łączy treści edukacyjne, uporządkowaną nawigację i funkcjonalności interaktywne w spójne doświadczenie użytkownika.",
+
+            items: [
+                {
+                    title: "Strona główna",
+                    description:
+                        "Strona główna przedstawia projekt i prowadzi użytkownika do treści edukacyjnych oraz porównania metod leczenia.",
+                },
+                {
+                    title: "Porównanie metod leczenia",
+                    description:
+                        "Interaktywna sekcja pozwalająca łatwiej analizować i porównywać różne metody redukcji masy ciała.",
+                },
+                {
+                    title: "Kalkulator kosztów",
+                    description:
+                        "Kalkulator umożliwiający analizowanie szacunkowych kosztów i porównywanie różnych scenariuszy.",
+                },
+                {
+                    title: "Wpływ na zdrowie",
+                    description:
+                        "Dedykowana sekcja prezentująca informacje dotyczące wpływu otyłości na zdrowie.",
+                },
+            ],
+        },
+
+        work: {
+            eyebrow: "Mój wkład",
+            title: "Nad czym pracowałem.",
+            description:
+                "Projekt łączył implementację frontendu, strukturę treści oraz funkcjonalności interaktywne w responsywną stronę WordPress.",
+            items: [
+                "Struktura strony i układ poszczególnych podstron",
+                "Implementacja responsywnego interfejsu",
+                "Interaktywne narzędzia do porównywania",
+                "Kalkulator kosztów",
+                "Nawigacja i doświadczenie użytkownika",
+                "Poprawa dostępności",
+                "Interakcje JavaScript",
+                "Rozwój strony w WordPress",
+            ],
+        },
+
+        next: {
+            eyebrow: "Projekt ukończony",
+            title: "Zobacz projekt na żywo.",
+            description:
+                "Odwiedź Slimter i zobacz kompletną wersję projektu w jego oryginalnym środowisku.",
+        },
+
+    },
+    developerCard: {
+        availability: "Dostępny",
+    },
 };
+
+
 
 export default pl;

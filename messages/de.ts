@@ -102,6 +102,8 @@ const de = {
 
                 imagePosition: "object-[center_70%] lg:object-[center_50%]",
 
+                imageHeight: "h-[500px]",
+
                 rewardsTitle: "Freigeschaltete Fähigkeiten",
 
                 battleButton: "Website besuchen",
@@ -161,7 +163,9 @@ const de = {
 
                 difficulty: 5,
 
-                image: "/images/developer-journey.webp",
+                image: "/images/digitalcreator.webp",
+
+                imagePosition: "object-[30%_center]",
 
                 rewardsTitle: "Freigeschaltete Fähigkeiten",
 
@@ -309,6 +313,109 @@ const de = {
             "Ich suche derzeit nach Möglichkeiten als Software Engineer, nach Freelance-Projekten und spannenden Kooperationen. Wenn du eine Idee, eine Herausforderung oder einfach Lust auf einen Austausch hast, lass uns die nächste Quest gemeinsam beginnen.",
 
         emailButton: "E-Mail senden",
+    },
+
+    slimterStory: {
+        back: "Zurück zu den Projekten",
+
+        eyebrow: "Projektgeschichte",
+        status: "Abgeschlossen",
+
+        title: "Slimter",
+        intro:
+            "Eine WordPress-Website, die Informationen über Adipositas und Behandlungsmethoden übersichtlich, verständlich und einfach zugänglich macht.",
+
+        visitWebsite: "Website besuchen",
+
+        skills: [
+            {
+                icon: "wordpress",
+                label: "WordPress",
+            },
+            {
+                icon: "javascript",
+                label: "JavaScript",
+            },
+            {
+                icon: "css",
+                label: "CSS",
+            },
+            {
+                icon: "accessibility",
+                label: "Barrierefreiheit",
+            },
+        ],
+
+        challenge: {
+            eyebrow: "Die Herausforderung",
+            title: "Komplexe Informationen in eine klare Nutzererfahrung verwandeln.",
+            description:
+                "Slimter wurde entwickelt, um Bildungsinhalte über Adipositas und Behandlungsmethoden strukturiert und verständlich darzustellen. Das Projekt verbindet umfangreiche Inhalte mit interaktiven Werkzeugen, die Nutzern helfen, Informationen zu erkunden und verschiedene Möglichkeiten zu vergleichen.",
+            points: [
+                "Klare Informationsarchitektur und Navigation",
+                "Responsive Darstellung auf Desktop, Tablet und Mobilgeräten",
+                "Interaktive Vergleichs- und Berechnungstools",
+                "Barrierearme Benutzeroberfläche und gut lesbare Inhalte",
+            ],
+        },
+
+        gallery: {
+            eyebrow: "Die Website",
+            title: "Von Information zu Interaktion.",
+            description:
+                "Das Projekt verbindet informative Inhalte, strukturierte Navigation und interaktive Funktionen zu einer konsistenten Benutzererfahrung.",
+
+            items: [
+                {
+                    title: "Startseite",
+                    description:
+                        "Die Startseite stellt das Projekt vor und führt Nutzer zu Bildungsinhalten und dem Vergleich verschiedener Behandlungsmethoden.",
+                },
+                {
+                    title: "Vergleich der Behandlungsmethoden",
+                    description:
+                        "Ein interaktiver Bereich, der den Vergleich verschiedener Methoden zur Gewichtsreduktion erleichtert.",
+                },
+                {
+                    title: "Kostenrechner",
+                    description:
+                        "Ein Rechner, mit dem Nutzer geschätzte Kosten untersuchen und verschiedene Szenarien vergleichen können.",
+                },
+                {
+                    title: "Auswirkungen auf die Gesundheit",
+                    description:
+                        "Ein eigener Inhaltsbereich mit Informationen über die gesundheitlichen Auswirkungen von Adipositas.",
+                },
+            ],
+        },
+
+        work: {
+            eyebrow: "Mein Beitrag",
+            title: "Woran ich gearbeitet habe.",
+            description:
+                "Das Projekt kombinierte Frontend-Implementierung, Inhaltsstruktur und interaktive Funktionen zu einer responsiven WordPress-Erfahrung.",
+            items: [
+                "Website-Struktur und Seitenlayouts",
+                "Responsive Implementierung",
+                "Interaktive Vergleichstools",
+                "Kostenrechner",
+                "Navigation und User Experience",
+                "Verbesserung der Barrierefreiheit",
+                "JavaScript-Interaktionen",
+                "WordPress-Entwicklung",
+            ],
+        },
+
+        next: {
+            eyebrow: "Projekt abgeschlossen",
+            title: "Das Live-Projekt ansehen.",
+            description:
+                "Besuche Slimter, um die vollständige Website in ihrer ursprünglichen Umgebung zu erleben.",
+        },
+
+    },
+    developerCard: {
+        availability: "Verfügbar",
     },
 };
 

@@ -161,7 +161,9 @@ const en = {
 
                 difficulty: 5,
 
-                image: "/images/developer-journey.webp",
+                image: "/images/digitalcreator.webp",
+
+                imagePosition: "object-[30%_center]",
 
                 rewardsTitle: "Rewards Unlocked",
 
@@ -310,6 +312,111 @@ const en = {
             "I'm currently looking for Software Engineering opportunities, freelance projects and collaborations. If you have an idea, a challenge or just want to connect, let's start the next quest together.",
 
         emailButton: "Send Email",
+    },
+
+    slimterStory: {
+        back: "Back to Projects",
+
+        eyebrow: "Project Story",
+        status: "Completed",
+
+        title: "Slimter",
+        intro:
+            "A WordPress website focused on making information about obesity and treatment methods easier to understand, navigate and compare.",
+
+        visitWebsite: "Visit Website",
+
+        skills: [
+            {
+                icon: "wordpress",
+                label: "WordPress",
+            },
+            {
+                icon: "javascript",
+                label: "JavaScript",
+            },
+            {
+                icon: "css",
+                label: "CSS",
+            },
+            {
+                icon: "accessibility",
+                label: "Accessibility",
+            },
+        ],
+
+        challenge: {
+            eyebrow: "The Challenge",
+            title: "Turning complex information into a clear experience.",
+            description:
+                "Slimter was designed to present educational content about obesity and treatment methods in a structured and accessible way. The project combines content-focused pages with interactive tools that help users explore information and compare different options.",
+            points: [
+                "Clear information architecture and navigation",
+                "Responsive experience across desktop, tablet and mobile",
+                "Interactive comparison and calculation tools",
+                "Accessibility-focused interface and readable content",
+            ],
+        },
+
+        gallery: {
+            eyebrow: "The Website",
+            title: "From information to interaction.",
+            description:
+                "The project combines educational content, structured navigation and interactive functionality into one consistent experience.",
+
+            items: [
+                {
+                    title: "Homepage",
+                    description:
+                        "The main landing page introduces the project and guides users towards educational content and treatment comparisons.",
+                },
+                {
+                    title: "Treatment Comparison",
+                    description:
+                        "An interactive comparison area designed to make different weight-loss methods easier to explore.",
+                },
+                {
+                    title: "Cost Calculator",
+                    description:
+                        "A calculator that allows users to explore estimated costs and compare different scenarios.",
+                },
+                {
+                    title: "Health Impact",
+                    description:
+                        "A dedicated content section presenting information about the broader health impact of obesity.",
+                },
+            ],
+        },
+
+        work: {
+            eyebrow: "My Contribution",
+            title: "What I worked on.",
+            description:
+                "The project combined frontend implementation, content structure and interactive functionality into a responsive WordPress experience.",
+            items: [
+                "Website structure and page layouts",
+                "Responsive implementation",
+                "Interactive comparison tools",
+                "Cost calculator",
+                "Navigation and user experience",
+                "Accessibility improvements",
+                "JavaScript interactions",
+                "WordPress development",
+            ],
+        },
+
+        next: {
+            eyebrow: "Project Complete",
+            title: "Explore the live project.",
+            description:
+                "Visit Slimter to see the complete experience and explore the project in its original environment.",
+        },
+
+
+    },
+
+    developerCard: {
+        availability: "Open to Work",
     },
 };
 
