@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 type DeveloperCardProps = {
     started: boolean;
@@ -11,6 +12,28 @@ export default function DeveloperCard({
     started,
 }: DeveloperCardProps) {
     const { t } = useLanguage();
+    const [footerVisible, setFooterVisible] = useState(false);
+
+    useEffect(() => {
+        const footer = document.getElementById("site-footer");
+
+        if (!footer) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setFooterVisible(entry.isIntersecting);
+            },
+            {
+                threshold: 0.05,
+            }
+        );
+
+        observer.observe(footer);
+
+        return () => observer.disconnect();
+    }, []);
+
+    const visible = started && !footerVisible;
 
     return (
         <div
@@ -30,7 +53,7 @@ export default function DeveloperCard({
                 duration-700
                 ease-out
 
-                ${started
+                ${visible
                     ? "translate-y-0 opacity-100"
                     : "translate-y-40 opacity-0 pointer-events-none"
                 }

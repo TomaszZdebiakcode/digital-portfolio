@@ -418,6 +418,15 @@ const en = {
     developerCard: {
         availability: "Open to Work",
     },
+
+    footer: {
+        eyebrow: "BUILD CREATE DEFEAT",
+        lineOne: "Still building. Still learning. Still growing",
+        lineTwo: "The next level is always ahead",
+        backToTop: "Back to top",
+        copyright: "All rights reserved",
+        designedBy: "Designed & Developed by",
+    },
 };
 
 export default en;

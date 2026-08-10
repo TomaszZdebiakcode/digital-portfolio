@@ -415,6 +415,15 @@ const pl = {
     developerCard: {
         availability: "Dostępny",
     },
+
+    footer: {
+        eyebrow: "BUILD CREATE DEFEAT",
+        lineOne: "Wciąż tworzę. Wciąż się uczę. Wciąż się rozwijam",
+        lineTwo: "Kolejny poziom zawsze jest przede mną",
+        backToTop: "Wróć na górę",
+        copyright: "Wszystkie prawa zastrzeżone",
+        designedBy: "Designed & Developed by",
+    },
 };
 
 

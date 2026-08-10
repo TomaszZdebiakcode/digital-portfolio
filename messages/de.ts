@@ -417,6 +417,15 @@ const de = {
     developerCard: {
         availability: "Verfügbar",
     },
+
+    footer: {
+        eyebrow: "BUILD CREATE DEFEAT",
+        lineOne: "Ich entwickle. Ich lerne. Ich wachse",
+        lineTwo: "Das nächste Level liegt immer vor mir",
+        backToTop: "Nach oben",
+        copyright: "Alle Rechte vorbehalten",
+        designedBy: "Designed & Developed by",
+    },
 };
 
 export default de;
