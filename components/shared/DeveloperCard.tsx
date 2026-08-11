@@ -75,7 +75,7 @@ export default function DeveloperCard({
                         </h3>
 
                         <p className="mt-2 text-sm text-zinc-400">
-                            Game Software Engineer
+                            Product Engineer
                             <br />
 
                             <span className="mt-2 inline-flex items-center gap-6 text-green-400">

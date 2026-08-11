@@ -8,8 +8,8 @@ const de = {
 
     hero: {
         eyebrow: "SUCHST DU EINEN",
-        titleLine1: "Digital",
-        titleLine2: "Creator",
+        titleLine1: "Product",
+        titleLine2: "Engineer",
 
         description1: "Ich entwickle",
         descriptionHighlight1: "Produkte",

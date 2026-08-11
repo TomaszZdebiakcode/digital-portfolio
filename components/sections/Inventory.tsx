@@ -3,7 +3,7 @@
 import {
     BrainCircuit,
     Workflow,
-    Rocket,
+    Code2,
     Gauge,
 } from "lucide-react";
 
@@ -22,7 +22,7 @@ const arsenalItems = [
     },
     {
         number: "03",
-        icon: Rocket,
+        icon: Code2,
         key: "implementation",
     },
     {
