@@ -33,7 +33,7 @@ const en = {
             "I want something bigger than a traditional job. I want to build products, create systems and solve problems that improve people's lives.",
 
         paragraph3:
-            "Developer Journey is where I document that process. Every project, every challenge and every quest moves me one step closer to becoming the engineer I want to be.",
+            "This is where I document that process. Every project, every challenge and every quest moves me one step closer to becoming the engineer I want to be.",
     },
 
     missionStatus: {

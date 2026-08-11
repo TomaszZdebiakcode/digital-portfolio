@@ -33,7 +33,7 @@ const de = {
             "Ich möchte mehr als einen traditionellen Job. Ich möchte Produkte entwickeln, Systeme schaffen und Probleme lösen, die das Leben der Menschen verbessern.",
 
         paragraph3:
-            "Developer Journey ist der Ort, an dem ich diesen Prozess dokumentiere. Jedes Projekt, jede Herausforderung und jede Quest bringt mich meinem Ziel näher, der Entwickler zu werden, der ich sein möchte.",
+            "Hier dokumentiere ich diesen Prozess. Jedes Projekt, jede Herausforderung und jede Quest bringt mich dem Ingenieur näher, der ich sein möchte.",
     },
 
     missionStatus: {
