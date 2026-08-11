@@ -154,14 +154,14 @@ const pl = {
                 boss: "Boss #02",
                 status: "Ukończony",
 
-                name: "Digital Portfolio",
+                name: "Engineer Portfolio",
 
                 description:
                     "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne oraz rozwój jako inżyniera oprogramowania.",
 
                 difficulty: 5,
 
-                image: "/images/digitalcreator.webp",
+                image: "/images/portfolio-home.webp",
 
                 imagePosition: "object-[30%_center]",
 
@@ -173,7 +173,7 @@ const pl = {
 
                 sourceButton: "Kod źródłowy",
 
-                href: "/boss/developer-journey",
+                href: "/boss/engineer-portfolio",
 
                 github: "https://github.com/TomaszZdebiakcode/digital-portfolio",
 
@@ -412,8 +412,118 @@ const pl = {
         },
 
     },
+
     developerCard: {
         availability: "Dostępny",
+    },
+
+    engineerPortfolioStory: {
+        back: "Wróć do projektów",
+
+        eyebrow: "BOSS #02",
+        status: "✓ Pokonany",
+
+        title: "Engineer Portfolio",
+
+        intro:
+            "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne oraz rozwój jako inżyniera oprogramowania.",
+
+        visitPortfolio: "Odwiedź portfolio",
+
+        skills: [
+            {
+                label: "React",
+                icon: "react",
+            },
+            {
+                label: "Next.js",
+                icon: "nextjs",
+            },
+            {
+                label: "TypeScript",
+                icon: "typescript",
+            },
+            {
+                label: "Responsive UI",
+                icon: "responsive",
+            },
+        ],
+
+        about: {
+            eyebrow: "O MNIE",
+            title: "Kim jestem?",
+
+            paragraphs: [
+                "Jestem studentem trzeciego roku inżynierii oprogramowania gier. Rozwijam swoje umiejętności programistyczne zarówno poprzez studia, jak i projekty, skupiając się na tworzeniu praktycznych i dopracowanych produktów.",
+
+                "Na co dzień prowadzę również własny biznes ogrodniczy, który nauczył mnie odpowiedzialności, organizacji pracy i podejmowania decyzji w realnych warunkach biznesowych.",
+
+                "Obecnie pracuję nad dwoma projektami, które w najbliższym czasie ujrzą światło dzienne. Engineer Portfolio jest miejscem, w którym dokumentuję ten proces — od pierwszej koncepcji aż po gotowy produkt.",
+            ],
+
+            points: [
+                "3. rok inżynierii oprogramowania gier",
+                "Własny biznes ogrodniczy",
+                "Dwa projekty w trakcie rozwoju",
+                "Nauka poprzez praktyczne tworzenie",
+            ],
+        },
+
+        gallery: {
+            eyebrow: "PORTFOLIO",
+            title: "Od koncepcji do produktu.",
+
+            description:
+                "Portfolio zostało zaprojektowane jako miejsce prezentujące moje doświadczenie, projekty oraz rozwój jako inżyniera oprogramowania.",
+
+            items: [
+                {
+                    title: "Strona główna",
+                    description:
+                        "Pierwszy kontakt z portfolio — minimalistyczny interfejs skupiony na mnie, moich projektach i tym, co tworzę.",
+                },
+                {
+                    title: "O mnie",
+                    description:
+                        "Sekcja przedstawiająca moje podejście do tworzenia oprogramowania oraz drogę, którą obecnie podążam.",
+                },
+                {
+                    title: "Projekty",
+                    description:
+                        "Miejsce, w którym prezentuję projekty, nad którymi pracuję oraz technologie wykorzystywane podczas ich tworzenia.",
+                },
+                {
+                    title: "Kontakt",
+                    description:
+                        "Prosty sposób na nawiązanie kontaktu i rozpoczęcie rozmowy.",
+                },
+            ],
+        },
+
+        work: {
+            eyebrow: "CO TWORZĘ",
+            title: "Więcej niż kod.",
+
+            description:
+                "Interesuje mnie cały proces tworzenia produktu — od pomysłu i projektu, przez implementację, aż po gotowe rozwiązanie.",
+
+            items: [
+                "Nowoczesne aplikacje webowe",
+                "Interfejsy użytkownika",
+                "Systemy i logika aplikacji",
+                "Responsywne doświadczenia",
+                "Projekty rozwijane od podstaw",
+                "Eksperymentowanie z nowymi technologiami",
+            ],
+        },
+
+        next: {
+            eyebrow: "CO DALEJ?",
+            title: "To dopiero początek.",
+
+            description:
+                "Portfolio będzie rozwijane razem ze mną — kolejne projekty, nowe doświadczenia i następne kroki pojawią się tutaj wraz z moim rozwojem.",
+        },
     },
 
     footer: {

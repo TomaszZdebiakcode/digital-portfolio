@@ -156,14 +156,14 @@ const de = {
                 boss: "Boss #02",
                 status: "Abgeschlossen",
 
-                name: "Digital Portfolio",
+                name: "Engineer Portfolio",
 
                 description:
-                    "Mein digitales Portfolio, das meine Projekte, technischen Fähigkeiten und meine Entwicklung als Softwareentwickler präsentiert.",
+                    "Mein digitales Portfolio, das meine Projekte, technischen Fähigkeiten und meine Entwicklung zum Softwareentwickler präsentiert.",
 
                 difficulty: 5,
 
-                image: "/images/digitalcreator.webp",
+                image: "/images/portfolio-home.webp",
 
                 imagePosition: "object-[30%_center]",
 
@@ -175,7 +175,7 @@ const de = {
 
                 sourceButton: "Quellcode",
 
-                href: "/boss/developer-journey",
+                href: "/boss/engineer-portfolio",
 
                 github: "https://github.com/TomaszZdebiakcode/digital-portfolio",
 
@@ -416,6 +416,115 @@ const de = {
     },
     developerCard: {
         availability: "Verfügbar",
+    },
+
+    engineerPortfolioStory: {
+        back: "Zurück zu den Projekten",
+
+        eyebrow: "BOSS #02",
+        status: "✓ Besiegt",
+
+        title: "Engineer Portfolio",
+
+        intro:
+            "Mein digitales Portfolio, das meine Projekte, technischen Fähigkeiten und meine Entwicklung als Softwareentwickler präsentiert.",
+
+        visitPortfolio: "Portfolio ansehen",
+
+        skills: [
+            {
+                label: "React",
+                icon: "react",
+            },
+            {
+                label: "Next.js",
+                icon: "nextjs",
+            },
+            {
+                label: "TypeScript",
+                icon: "typescript",
+            },
+            {
+                label: "Responsive UI",
+                icon: "responsive",
+            },
+        ],
+
+        about: {
+            eyebrow: "ÜBER MICH",
+            title: "Wer bin ich?",
+
+            paragraphs: [
+                "Ich bin Student im dritten Jahr des Studiengangs Software Engineering mit Schwerpunkt Spieleentwicklung. Ich entwickle meine Programmierkenntnisse sowohl im Studium als auch durch Projekte weiter und konzentriere mich dabei auf die Entwicklung praktischer und durchdachter Produkte.",
+
+                "Neben meinem Studium führe ich mein eigenes Gartenbauunternehmen. Dadurch habe ich gelernt, Verantwortung zu übernehmen, meine Arbeit zu organisieren und Entscheidungen unter realen geschäftlichen Bedingungen zu treffen.",
+
+                "Derzeit arbeite ich an zwei Projekten, die in naher Zukunft das Licht der Welt erblicken werden. Engineer Portfolio ist der Ort, an dem ich diesen Prozess dokumentiere – von der ersten Idee bis zum fertigen Produkt.",
+            ],
+
+            points: [
+                "Student im dritten Jahr Software Engineering",
+                "Eigenes Gartenbauunternehmen",
+                "Zwei Projekte in Entwicklung",
+                "Lernen durch praktische Umsetzung",
+            ],
+        },
+
+        gallery: {
+            eyebrow: "PORTFOLIO",
+            title: "Von der Idee zum Produkt.",
+
+            description:
+                "Das Portfolio wurde als Ort entwickelt, an dem ich meine Erfahrungen, Projekte und meine Entwicklung als Softwareentwickler präsentieren kann.",
+
+            items: [
+                {
+                    title: "Startseite",
+                    description:
+                        "Der erste Kontakt mit dem Portfolio – eine minimalistische Oberfläche, die mich, meine Projekte und meine Arbeit in den Mittelpunkt stellt.",
+                },
+                {
+                    title: "Über mich",
+                    description:
+                        "Ein Bereich, der meine Herangehensweise an die Softwareentwicklung und meinen aktuellen Weg zeigt.",
+                },
+                {
+                    title: "Projekte",
+                    description:
+                        "Hier präsentiere ich die Projekte, an denen ich arbeite, sowie die Technologien, die ich dabei einsetze.",
+                },
+                {
+                    title: "Kontakt",
+                    description:
+                        "Eine einfache Möglichkeit, Kontakt aufzunehmen und ein Gespräch zu beginnen.",
+                },
+            ],
+        },
+
+        work: {
+            eyebrow: "WAS ICH ENTWICKLE",
+            title: "Mehr als nur Code.",
+
+            description:
+                "Mich interessiert der gesamte Prozess der Produktentwicklung – von der ersten Idee und dem Design über die Umsetzung bis hin zur fertigen Lösung.",
+
+            items: [
+                "Moderne Webanwendungen",
+                "Benutzeroberflächen",
+                "Anwendungssysteme und Logik",
+                "Responsive Erlebnisse",
+                "Projekte von Grund auf",
+                "Experimentieren mit neuen Technologien",
+            ],
+        },
+
+        next: {
+            eyebrow: "WIE GEHT ES WEITER?",
+            title: "Das ist erst der Anfang.",
+
+            description:
+                "Das Portfolio wird gemeinsam mit mir weiter wachsen – neue Projekte, Erfahrungen und nächste Schritte werden hier mit meiner weiteren Entwicklung erscheinen.",
+        },
     },
 
     footer: {

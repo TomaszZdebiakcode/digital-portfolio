@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { GiHamburger, GiFrenchFries } from "react-icons/gi";
 
@@ -15,6 +15,7 @@ import {
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const navRef = useRef<HTMLElement>(null);
 
     const { t } = useLanguage();
     const pathname = usePathname();
@@ -37,6 +38,29 @@ export default function Navbar() {
             label: t.navbar.inventory,
         },
     ];
+
+    // Close mobile menu when clicking outside navbar
+    useEffect(() => {
+        if (!isOpen) return;
+
+        const handleClickOutside = (event: MouseEvent) => {
+            if (
+                navRef.current &&
+                !navRef.current.contains(event.target as Node)
+            ) {
+                setIsOpen(false);
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener(
+                "mousedown",
+                handleClickOutside
+            );
+        };
+    }, [isOpen]);
 
     const handleLogoClick = (
         e: React.MouseEvent<HTMLAnchorElement>
@@ -68,7 +92,10 @@ export default function Navbar() {
     };
 
     return (
-        <header className="fixed left-0 top-0 z-50 w-full">
+        <header
+            ref={navRef}
+            className="fixed left-0 top-0 z-50 w-full"
+        >
             <div className="mx-auto max-w-7xl px-4">
                 <nav
                     className="

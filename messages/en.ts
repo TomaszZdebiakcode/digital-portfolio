@@ -154,14 +154,14 @@ const en = {
                 boss: "Boss #02",
                 status: "Defeated",
 
-                name: "Digital Portfolio",
+                name: "Engineer Portfolio",
 
                 description:
                     "My personal digital portfolio showcasing my projects, technical skills and journey as a software engineer.",
 
                 difficulty: 5,
 
-                image: "/images/digitalcreator.webp",
+                image: "/images/portfolio-home.webp",
 
                 imagePosition: "object-[30%_center]",
 
@@ -173,7 +173,7 @@ const en = {
 
                 sourceButton: "Source Code",
 
-                href: "/boss/developer-journey",
+                href: "/boss/engineer-portfolio",
 
                 github: "https://github.com/TomaszZdebiakcode/digital-portfolio",
 
@@ -417,6 +417,115 @@ const en = {
 
     developerCard: {
         availability: "Open to Work",
+    },
+
+    engineerPortfolioStory: {
+        back: "Back to projects",
+
+        eyebrow: "BOSS #02",
+        status: "✓ Defeated",
+
+        title: "Engineer Portfolio",
+
+        intro:
+            "My digital portfolio showcasing my projects, technical skills and development as a software engineer.",
+
+        visitPortfolio: "Visit Portfolio",
+
+        skills: [
+            {
+                label: "React",
+                icon: "react",
+            },
+            {
+                label: "Next.js",
+                icon: "nextjs",
+            },
+            {
+                label: "TypeScript",
+                icon: "typescript",
+            },
+            {
+                label: "Responsive UI",
+                icon: "responsive",
+            },
+        ],
+
+        about: {
+            eyebrow: "ABOUT ME",
+            title: "Who am I?",
+
+            paragraphs: [
+                "I am a third-year Software Engineering student specializing in game development. I develop my programming skills through both university and projects, focusing on building practical and well-crafted products.",
+
+                "Alongside my studies, I also run my own gardening business, which has taught me responsibility, organization and how to make decisions in real-world business situations.",
+
+                "I am currently working on two projects that will see the light of day in the near future. Engineer Portfolio is where I document that process — from the first concept to the finished product.",
+            ],
+
+            points: [
+                "Third-year Software Engineering student",
+                "Own gardening business",
+                "Two projects currently in development",
+                "Learning through practical creation",
+            ],
+        },
+
+        gallery: {
+            eyebrow: "PORTFOLIO",
+            title: "From concept to product.",
+
+            description:
+                "The portfolio was designed as a place to showcase my experience, projects and development as a software engineer.",
+
+            items: [
+                {
+                    title: "Home Page",
+                    description:
+                        "The first point of contact with the portfolio — a minimalist interface focused on me, my projects and what I create.",
+                },
+                {
+                    title: "About",
+                    description:
+                        "A section presenting my approach to software development and the path I am currently following.",
+                },
+                {
+                    title: "Projects",
+                    description:
+                        "A place where I showcase the projects I work on and the technologies I use to build them.",
+                },
+                {
+                    title: "Contact",
+                    description:
+                        "A simple way to get in touch and start a conversation.",
+                },
+            ],
+        },
+
+        work: {
+            eyebrow: "WHAT I BUILD",
+            title: "More than code.",
+
+            description:
+                "I am interested in the entire product creation process — from the initial idea and design, through implementation, to the finished solution.",
+
+            items: [
+                "Modern web applications",
+                "User interfaces",
+                "Application systems and logic",
+                "Responsive experiences",
+                "Projects built from the ground up",
+                "Experimenting with new technologies",
+            ],
+        },
+
+        next: {
+            eyebrow: "WHAT'S NEXT?",
+            title: "This is only the beginning.",
+
+            description:
+                "The portfolio will grow alongside me — new projects, experiences and next steps will appear here as I continue to develop.",
+        },
     },
 
     footer: {

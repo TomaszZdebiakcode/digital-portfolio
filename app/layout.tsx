@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tomasz Zdebiak | Digital Creator",
-  description: "Digital Creator building digital products, websites and software experiences.",
+  title: "Tomasz Zdebiak | Product Engineer",
+  description: "Product Engineer building products, websites and software experiences.",
 };
 
 export default function RootLayout({
