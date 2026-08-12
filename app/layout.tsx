@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tomasz Zdebiak | Product Engineer",
+  metadataBase: new URL("https://tomaszzdebiak.dev"),
+
   description:
     "Product Engineer building products, websites and software experiences.",
 
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     title: "Tomasz Zdebiak | Product Engineer",
     description:
       "Product Engineer building products, websites and software experiences.",
+    siteName: "Tomasz Zdebiak",
     images: [
       {
         url: "/images/portfolio-home.webp",
