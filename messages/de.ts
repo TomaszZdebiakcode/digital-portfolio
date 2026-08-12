@@ -156,6 +156,52 @@ const de = {
                 boss: "Boss #02",
                 status: "Abgeschlossen",
 
+                name: "Slimter",
+
+                description:
+                    "Eine auf WordPress basierende Website zum Thema Adipositas und zur verständlichen Gegenüberstellung verschiedener Behandlungsmethoden, mit Fokus auf Barrierefreiheit und responsives Design.",
+
+                difficulty: 5,
+
+                image: "/images/slimter.webp",
+
+                imagePosition: "object-[40%_center]",
+
+                rewardsTitle: "Freigeschaltete Fähigkeiten",
+
+                battleButton: "Website besuchen",
+                hoverButton: "Entdecken?",
+
+                historyButton: "Geschichte lesen",
+                historyHref: "/boss/slimter",
+
+                href: "https://slimter.com",
+                github: "#",
+
+                skills: [
+                    {
+                        icon: "wordpress",
+                        label: "WordPress",
+                    },
+                    {
+                        icon: "javascript",
+                        label: "JavaScript",
+                    },
+                    {
+                        icon: "css",
+                        label: "CSS",
+                    },
+                    {
+                        icon: "accessibility",
+                        label: "Barrierefreiheit",
+                    },
+                ],
+            },
+
+            {
+                boss: "Boss #03",
+                status: "Abgeschlossen",
+
                 name: "Engineer Portfolio",
 
                 description:
@@ -195,52 +241,6 @@ const de = {
                     {
                         icon: "responsive",
                         label: "Responsives UI",
-                    },
-                ],
-            },
-
-            {
-                boss: "Boss #03",
-                status: "Abgeschlossen",
-
-                name: "Slimter",
-
-                description:
-                    "Eine auf WordPress basierende Website zum Thema Adipositas und zur verständlichen Gegenüberstellung verschiedener Behandlungsmethoden, mit Fokus auf Barrierefreiheit und responsives Design.",
-
-                difficulty: 4,
-
-                image: "/images/slimter.webp",
-
-                imagePosition: "object-[40%_center]",
-
-                rewardsTitle: "Freigeschaltete Fähigkeiten",
-
-                battleButton: "Website besuchen",
-                hoverButton: "Entdecken?",
-
-                historyButton: "Geschichte lesen",
-                historyHref: "/boss/slimter",
-
-                href: "https://slimter.com",
-                github: "#",
-
-                skills: [
-                    {
-                        icon: "wordpress",
-                        label: "WordPress",
-                    },
-                    {
-                        icon: "javascript",
-                        label: "JavaScript",
-                    },
-                    {
-                        icon: "css",
-                        label: "CSS",
-                    },
-                    {
-                        icon: "accessibility",
-                        label: "Barrierefreiheit",
                     },
                 ],
             },
@@ -421,7 +421,7 @@ const de = {
     engineerPortfolioStory: {
         back: "Zurück zu den Projekten",
 
-        eyebrow: "BOSS #02",
+        eyebrow: "BOSS #03",
         status: "✓ Besiegt",
 
         title: "Engineer Portfolio",

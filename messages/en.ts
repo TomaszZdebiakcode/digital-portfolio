@@ -154,6 +154,52 @@ const en = {
                 boss: "Boss #02",
                 status: "Defeated",
 
+                name: "Slimter",
+
+                description:
+                    "A WordPress website focused on obesity education, helping users compare treatment methods through an accessible and responsive experience.",
+
+                difficulty: 5,
+
+                image: "/images/slimter.webp",
+
+                imagePosition: "object-[40%_center]",
+
+                rewardsTitle: "Rewards Unlocked",
+
+                battleButton: "Visit Website",
+                hoverButton: "Explore?",
+
+                historyButton: "Read Story",
+                historyHref: "/boss/slimter",
+
+                href: "https://slimter.com",
+                github: "#",
+
+                skills: [
+                    {
+                        icon: "wordpress",
+                        label: "WordPress",
+                    },
+                    {
+                        icon: "javascript",
+                        label: "JavaScript",
+                    },
+                    {
+                        icon: "css",
+                        label: "CSS",
+                    },
+                    {
+                        icon: "accessibility",
+                        label: "Accessibility",
+                    },
+                ],
+            },
+
+            {
+                boss: "Boss #03",
+                status: "Defeated",
+
                 name: "Engineer Portfolio",
 
                 description:
@@ -197,51 +243,6 @@ const en = {
                 ],
             },
 
-            {
-                boss: "Boss #03",
-                status: "Defeated",
-
-                name: "Slimter",
-
-                description:
-                    "A WordPress website focused on obesity education, helping users compare treatment methods through an accessible and responsive experience.",
-
-                difficulty: 4,
-
-                image: "/images/slimter.webp",
-
-                imagePosition: "object-[40%_center]",
-
-                rewardsTitle: "Rewards Unlocked",
-
-                battleButton: "Visit Website",
-                hoverButton: "Explore?",
-
-                historyButton: "Read Story",
-                historyHref: "/boss/slimter",
-
-                href: "https://slimter.com",
-                github: "#",
-
-                skills: [
-                    {
-                        icon: "wordpress",
-                        label: "WordPress",
-                    },
-                    {
-                        icon: "javascript",
-                        label: "JavaScript",
-                    },
-                    {
-                        icon: "css",
-                        label: "CSS",
-                    },
-                    {
-                        icon: "accessibility",
-                        label: "Accessibility",
-                    },
-                ],
-            },
         ],
     },
 
@@ -422,7 +423,7 @@ const en = {
     engineerPortfolioStory: {
         back: "Back to projects",
 
-        eyebrow: "BOSS #02",
+        eyebrow: "BOSS #03",
         status: "✓ Defeated",
 
         title: "Engineer Portfolio",

@@ -149,9 +149,53 @@ const pl = {
                     },
                 ],
             },
-
             {
                 boss: "Boss #02",
+                status: "Ukończony",
+
+                name: "Slimter",
+
+                description:
+                    "Strona internetowa oparta na WordPressie, poświęcona edukacji na temat otyłości i porównywaniu metod leczenia, z naciskiem na dostępność i responsywność.",
+
+                difficulty: 5,
+
+                image: "/images/slimter.webp",
+
+                imagePosition: "object-[40%_center]",
+
+                rewardsTitle: "Zdobyte umiejętności",
+
+                battleButton: "Odwiedź stronę",
+                hoverButton: "Odkryj?",
+
+                historyButton: "Przeczytaj historię",
+                historyHref: "/boss/slimter",
+
+                href: "https://slimter.com",
+                github: "#",
+
+                skills: [
+                    {
+                        icon: "wordpress",
+                        label: "WordPress",
+                    },
+                    {
+                        icon: "javascript",
+                        label: "JavaScript",
+                    },
+                    {
+                        icon: "css",
+                        label: "CSS",
+                    },
+                    {
+                        icon: "accessibility",
+                        label: "Dostępność",
+                    },
+                ],
+            },
+            {
+                boss: "Boss #03",
                 status: "Ukończony",
 
                 name: "Engineer Portfolio",
@@ -193,52 +237,6 @@ const pl = {
                     {
                         icon: "responsive",
                         label: "Responsywny UI",
-                    },
-                ],
-            },
-
-            {
-                boss: "Boss #03",
-                status: "Ukończony",
-
-                name: "Slimter",
-
-                description:
-                    "Strona internetowa oparta na WordPressie, poświęcona edukacji na temat otyłości i porównywaniu metod leczenia, z naciskiem na dostępność i responsywność.",
-
-                difficulty: 4,
-
-                image: "/images/slimter.webp",
-
-                imagePosition: "object-[40%_center]",
-
-                rewardsTitle: "Zdobyte umiejętności",
-
-                battleButton: "Odwiedź stronę",
-                hoverButton: "Odkryj?",
-
-                historyButton: "Przeczytaj historię",
-                historyHref: "/boss/slimter",
-
-                href: "https://slimter.com",
-                github: "#",
-
-                skills: [
-                    {
-                        icon: "wordpress",
-                        label: "WordPress",
-                    },
-                    {
-                        icon: "javascript",
-                        label: "JavaScript",
-                    },
-                    {
-                        icon: "css",
-                        label: "CSS",
-                    },
-                    {
-                        icon: "accessibility",
-                        label: "Dostępność",
                     },
                 ],
             },
@@ -420,7 +418,7 @@ const pl = {
     engineerPortfolioStory: {
         back: "Wróć do projektów",
 
-        eyebrow: "BOSS #02",
+        eyebrow: "BOSS #03",
         status: "✓ Pokonany",
 
         title: "Engineer Portfolio",
