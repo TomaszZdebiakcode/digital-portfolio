@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     title: "Tomasz Zdebiak | Product Engineer",
     description:
       "Product Engineer building products, websites and software experiences.",
+    url: "https://tomaszzdebiak.dev/",
     siteName: "Tomasz Zdebiak",
     images: [
       {
