@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Tomasz Zdebiak",
     images: [
       {
-        url: "/images/portfolio-home.webp",
+        url: "/images/og-image.png",
         width: 1920,
         height: 1080,
         alt: "Tomasz Zdebiak | Product Engineer",
