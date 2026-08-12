@@ -18,7 +18,31 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tomasz Zdebiak | Product Engineer",
-  description: "Product Engineer building products, websites and software experiences.",
+  description:
+    "Product Engineer building products, websites and software experiences.",
+
+  openGraph: {
+    title: "Tomasz Zdebiak | Product Engineer",
+    description:
+      "Product Engineer building products, websites and software experiences.",
+    images: [
+      {
+        url: "/images/portfolio-home.webp",
+        width: 1920,
+        height: 1080,
+        alt: "Tomasz Zdebiak | Product Engineer",
+      },
+    ],
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Tomasz Zdebiak | Product Engineer",
+    description:
+      "Product Engineer building products, websites and software experiences.",
+    images: ["/images/portfolio-home.webp"],
+  },
 };
 
 export default function RootLayout({
