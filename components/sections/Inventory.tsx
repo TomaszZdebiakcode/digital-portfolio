@@ -125,27 +125,28 @@ export default function Inventory() {
                             {/* Icon */}
                             <div
                                 className="
-                                    relative
-                                    mb-12
-                                    flex
-                                    h-12
-                                    w-12
-                                    items-center
-                                    justify-center
-                                    rounded-xl
-                                    border
-                                    border-white/10
-                                    bg-white/[0.03]
-                                    text-blue-400
-                                    transition-all
-                                    duration-500
-                                    group-hover:border-white/20
-                                    group-hover:bg-white/[0.06]
-                                    group-hover:text-blue-300
-                                    group-hover:shadow-lg
-                                    group-hover:shadow-white/[0.04]
-                                "
+        relative
+        mb-12
+        flex
+        h-12
+        w-12
+        items-center
+        justify-center
+        rounded-xl
+        border
+        border-white/10
+        bg-white/[0.03]
+        text-white
+        transition-all
+        duration-500
+        group-hover:border-white/20
+        group-hover:bg-white/[0.06]
+        group-hover:text-white
+        group-hover:shadow-lg
+        group-hover:shadow-white/[0.04]
+    "
                             >
+
                                 <Icon className="h-6 w-6" />
                             </div>
 

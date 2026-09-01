@@ -244,6 +244,48 @@ const de = {
                     },
                 ],
             },
+            {
+                boss: "Boss #04",
+                status: "In Entwicklung",
+
+                name: "Bottle Project",
+
+                description:
+                    "Ein zukünftiges Projekt rund um ein reales Produkt, das Technologie, Produktentwicklung und Investmentdenken miteinander verbindet.",
+
+                difficulty: 5,
+
+                image: "/images/bottle_project.webp",
+
+                imagePosition: "object-center",
+
+                rewardsTitle: "Freigeschaltete Belohnungen",
+
+                battleButton: "Demnächst",
+
+                hoverButton: "Entdecken?",
+
+                href: "/boss/bottle-project",
+
+                skills: [
+                    {
+                        icon: "product",
+                        label: "Produktentwicklung",
+                    },
+                    {
+                        icon: "investment",
+                        label: "Investments",
+                    },
+                    {
+                        icon: "technology",
+                        label: "Technologie",
+                    },
+                    {
+                        icon: "entrepreneurship",
+                        label: "Unternehmertum",
+                    },
+                ],
+            },
         ],
     },
 

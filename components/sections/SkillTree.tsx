@@ -68,26 +68,28 @@ export default function SkillTree() {
                             {/* Icon */}
                             <div
                                 className="
-                                    relative
-                                    mb-6
-                                    flex
-                                    h-11
-                                    w-11
-                                    items-center
-                                    justify-center
-                                    rounded-xl
-                                    border
-                                    border-white/10
-                                    bg-white/[0.03]
-                                    transition-all
-                                    duration-500
-                                    group-hover:border-white/20
-                                    group-hover:bg-white/[0.06]
-                                    group-hover:shadow-lg
-                                    group-hover:shadow-white/[0.04]
-                                "
+        relative
+        mb-6
+        flex
+        h-11
+        w-11
+        items-center
+        justify-center
+        rounded-xl
+        border
+        border-white/10
+        bg-white/[0.03]
+        text-white
+        transition-all
+        duration-500
+        group-hover:border-white/20
+        group-hover:bg-white/[0.06]
+        group-hover:text-white
+        group-hover:shadow-lg
+        group-hover:shadow-white/[0.04]
+    "
                             >
-                                <Icon className="h-6 w-6 text-blue-400 transition-colors duration-300 group-hover:text-blue-300 sm:h-7 sm:w-7" />
+                                <Icon className="h-6 w-6 text-white transition-colors duration-300 group-hover:text-white sm:h-7 sm:w-7" />
                             </div>
 
                             <h3 className="relative mb-4 break-words text-2xl font-bold leading-tight text-white">
