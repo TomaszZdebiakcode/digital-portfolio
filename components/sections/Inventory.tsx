@@ -42,7 +42,7 @@ export default function Inventory() {
         >
             {/* HEADER */}
             <div className="mb-14 lg:mb-20">
-                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-violet-400">
+                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-blue-400">
                     {t.inventory.section}
                 </p>
 
@@ -77,12 +77,14 @@ export default function Inventory() {
                                 transition-all
                                 duration-500
                                 hover:-translate-y-1
-                                hover:border-violet-500/40
+                                hover:border-white/20
                                 hover:bg-zinc-900/80
+                                hover:shadow-xl
+                                hover:shadow-white/[0.03]
                                 sm:p-9
                             "
                         >
-                            {/* Glow */}
+                            {/* Subtle white glow */}
                             <div
                                 className="
                                     pointer-events-none
@@ -92,11 +94,11 @@ export default function Inventory() {
                                     h-56
                                     w-56
                                     rounded-full
-                                    bg-violet-500/10
+                                    bg-white/[0.025]
                                     blur-3xl
                                     transition-all
                                     duration-500
-                                    group-hover:bg-violet-500/20
+                                    group-hover:bg-white/[0.05]
                                 "
                             />
 
@@ -109,10 +111,10 @@ export default function Inventory() {
                                     text-5xl
                                     font-light
                                     tracking-tight
-                                    text-white/10
+                                    text-white/[0.08]
                                     transition-colors
                                     duration-500
-                                    group-hover:text-violet-400/30
+                                    group-hover:text-white/[0.16]
                                     sm:right-9
                                     sm:top-8
                                 "
@@ -132,14 +134,16 @@ export default function Inventory() {
                                     justify-center
                                     rounded-xl
                                     border
-                                    border-violet-500/20
-                                    bg-violet-500/10
-                                    text-violet-400
+                                    border-white/10
+                                    bg-white/[0.03]
+                                    text-blue-400
                                     transition-all
                                     duration-500
-                                    group-hover:border-violet-400/40
-                                    group-hover:bg-violet-500/20
-                                    group-hover:text-violet-300
+                                    group-hover:border-white/20
+                                    group-hover:bg-white/[0.06]
+                                    group-hover:text-blue-300
+                                    group-hover:shadow-lg
+                                    group-hover:shadow-white/[0.04]
                                 "
                             >
                                 <Icon className="h-6 w-6" />
@@ -170,8 +174,10 @@ export default function Inventory() {
                                                 text-xs
                                                 font-medium
                                                 text-zinc-400
-                                                transition-colors
-                                                group-hover:border-violet-500/20
+                                                transition-all
+                                                duration-300
+                                                group-hover:border-white/15
+                                                group-hover:bg-white/[0.05]
                                                 group-hover:text-zinc-300
                                             "
                                         >

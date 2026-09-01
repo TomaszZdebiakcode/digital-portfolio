@@ -3,12 +3,19 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
+
+  --accent: #2563eb;
+  --accent-hover: #3b82f6;
+
   color-scheme: dark;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

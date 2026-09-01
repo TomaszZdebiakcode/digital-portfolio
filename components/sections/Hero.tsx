@@ -1,4 +1,5 @@
 "use client";
+
 import BottleField from "@/components/hero/BottleField";
 import MobileBottleField from "@/components/hero/MobileBottleField";
 import { usePathname } from "next/navigation";
@@ -16,9 +17,9 @@ export default function Hero() {
 
     const { t } = useLanguage();
     const pathname = usePathname();
+
     const startAdventure = () => {
         setAdventureStarted(true);
-
         smoothScrollToSection("projects", 0, 1100);
     };
 
@@ -83,7 +84,7 @@ export default function Hero() {
                     <div className="flex max-w-xl flex-col items-start text-left">
 
                         {/* Eyebrow */}
-                        <span className="text-xs font-semibold uppercase tracking-[0.45em] text-violet-400">
+                        <span className="text-xs font-semibold uppercase tracking-[0.45em] text-blue-400">
                             {t.hero.eyebrow}
                         </span>
 
@@ -127,19 +128,23 @@ export default function Hero() {
     gap-2
     whitespace-nowrap
     rounded-xl
-    bg-violet-500
+    border
+    border-blue-500
+    bg-blue-500/5
     px-4
     text-sm
     font-bold
     uppercase
     tracking-[0.12em]
-    text-white
+    text-blue-400
     transition-all
     duration-300
     hover:-translate-y-1
-    hover:bg-violet-400
+    hover:border-blue-400
+    hover:bg-blue-500/10
+    hover:text-blue-300
     hover:shadow-xl
-    hover:shadow-violet-500/20
+    hover:shadow-blue-500/10
 "
                         >
                             <FaLinkedin className="h-4 w-4 shrink-0" />
@@ -152,12 +157,12 @@ export default function Hero() {
                                 smoothScrollToSection("mission", 128, 1100)
                             }
                             className="
-            mt-6
-            text-sm
-            text-zinc-500
-            transition
-            hover:text-zinc-300
-        "
+                                mt-6
+                                text-sm
+                                text-zinc-500
+                                transition
+                                hover:text-zinc-300
+                            "
                         >
                             {t.hero.story} →
                         </button>
@@ -165,9 +170,7 @@ export default function Hero() {
 
                     {/* RIGHT */}
                     <div className="relative hidden h-[700px] lg:block">
-                        {/* Tutaj w etapie 2 wrzucimy Boss of Bottles */}
                     </div>
-
                 </div>
             </div>
 

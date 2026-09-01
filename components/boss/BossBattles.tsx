@@ -22,7 +22,6 @@ export default function BossBattles() {
             "
         >
             {/* Section Header */}
-
             <div className="mb-16 min-w-0 sm:mb-20">
                 <p
                     className="
@@ -30,7 +29,7 @@ export default function BossBattles() {
                         text-sm
                         uppercase
                         tracking-[0.3em]
-                        text-violet-400
+                        text-blue-400
                     "
                 >
                     {t.bossBattles.section}
@@ -67,7 +66,6 @@ export default function BossBattles() {
             </div>
 
             {/* Projects */}
-
             <div className="min-w-0 max-w-full space-y-12">
                 {t.bossBattles.projects.map((project) => (
                     <BossCard

@@ -496,6 +496,11 @@ const en = {
                         "A place where I showcase the projects I work on and the technologies I use to build them.",
                 },
                 {
+                    title: "Arsenal",
+                    description:
+                        "A section presenting the tools, technologies and workflows I use to turn ideas into practical solutions.",
+                },
+                {
                     title: "Contact",
                     description:
                         "A simple way to get in touch and start a conversation.",

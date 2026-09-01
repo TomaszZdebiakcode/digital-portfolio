@@ -429,7 +429,7 @@ const de = {
         intro:
             "Mein digitales Portfolio, das meine Projekte, technischen Fähigkeiten und meine Entwicklung als Softwareentwickler präsentiert.",
 
-        visitPortfolio: "Portfolio ansehen",
+        visitPortfolio: "Portfolio besuchen",
 
         skills: [
             {
@@ -445,7 +445,7 @@ const de = {
                 icon: "typescript",
             },
             {
-                label: "Responsive UI",
+                label: "Responsives UI",
                 icon: "responsive",
             },
         ],
@@ -455,43 +455,48 @@ const de = {
             title: "Wer bin ich?",
 
             paragraphs: [
-                "Ich bin Student im dritten Jahr des Studiengangs Software Engineering mit Schwerpunkt Spieleentwicklung. Ich entwickle meine Programmierkenntnisse sowohl im Studium als auch durch Projekte weiter und konzentriere mich dabei auf die Entwicklung praktischer und durchdachter Produkte.",
+                "Ich bin Software-Engineering-Student im dritten Studienjahr mit Schwerpunkt auf Spieleentwicklung. Meine Programmierkenntnisse entwickle ich sowohl im Studium als auch durch eigene Projekte weiter. Dabei konzentriere ich mich darauf, praktische und gut durchdachte Produkte zu entwickeln.",
 
-                "Neben meinem Studium führe ich mein eigenes Gartenbauunternehmen. Dadurch habe ich gelernt, Verantwortung zu übernehmen, meine Arbeit zu organisieren und Entscheidungen unter realen geschäftlichen Bedingungen zu treffen.",
+                "Neben meinem Studium führe ich auch mein eigenes Gartenbauunternehmen. Dadurch habe ich gelernt, Verantwortung zu übernehmen, mich zu organisieren und Entscheidungen in realen geschäftlichen Situationen zu treffen.",
 
-                "Derzeit arbeite ich an zwei Projekten, die in naher Zukunft das Licht der Welt erblicken werden. Engineer Portfolio ist der Ort, an dem ich diesen Prozess dokumentiere – von der ersten Idee bis zum fertigen Produkt.",
+                "Derzeit arbeite ich an zwei Projekten, die in naher Zukunft das Licht der Welt erblicken werden. Das Engineer Portfolio ist der Ort, an dem ich diesen Prozess dokumentiere — vom ersten Konzept bis zum fertigen Produkt.",
             ],
 
             points: [
-                "Student im dritten Jahr Software Engineering",
+                "Software-Engineering-Student im dritten Studienjahr",
                 "Eigenes Gartenbauunternehmen",
-                "Zwei Projekte in Entwicklung",
+                "Zwei Projekte derzeit in Entwicklung",
                 "Lernen durch praktische Umsetzung",
             ],
         },
 
         gallery: {
             eyebrow: "PORTFOLIO",
-            title: "Von der Idee zum Produkt.",
+            title: "Vom Konzept zum Produkt.",
 
             description:
-                "Das Portfolio wurde als Ort entwickelt, an dem ich meine Erfahrungen, Projekte und meine Entwicklung als Softwareentwickler präsentieren kann.",
+                "Das Portfolio wurde als Ort gestaltet, an dem ich meine Erfahrungen, Projekte und meine Entwicklung als Softwareentwickler präsentieren kann.",
 
             items: [
                 {
                     title: "Startseite",
                     description:
-                        "Der erste Kontakt mit dem Portfolio – eine minimalistische Oberfläche, die mich, meine Projekte und meine Arbeit in den Mittelpunkt stellt.",
+                        "Der erste Kontaktpunkt mit dem Portfolio — eine minimalistische Benutzeroberfläche mit Fokus auf mich, meine Projekte und das, was ich entwickle.",
                 },
                 {
                     title: "Über mich",
                     description:
-                        "Ein Bereich, der meine Herangehensweise an die Softwareentwicklung und meinen aktuellen Weg zeigt.",
+                        "Ein Bereich, der meine Herangehensweise an die Softwareentwicklung und den Weg, den ich derzeit gehe, vorstellt.",
                 },
                 {
                     title: "Projekte",
                     description:
-                        "Hier präsentiere ich die Projekte, an denen ich arbeite, sowie die Technologien, die ich dabei einsetze.",
+                        "Ein Ort, an dem ich die Projekte präsentiere, an denen ich arbeite, sowie die Technologien, die ich für deren Entwicklung einsetze.",
+                },
+                {
+                    title: "Arsenal",
+                    description:
+                        "Ein Bereich, der die Tools, Technologien und Workflows zeigt, die ich nutze, um Ideen in praktische Lösungen zu verwandeln.",
                 },
                 {
                     title: "Kontakt",
@@ -506,13 +511,13 @@ const de = {
             title: "Mehr als nur Code.",
 
             description:
-                "Mich interessiert der gesamte Prozess der Produktentwicklung – von der ersten Idee und dem Design über die Umsetzung bis hin zur fertigen Lösung.",
+                "Mich interessiert der gesamte Prozess der Produktentwicklung — von der ersten Idee und dem Design über die Implementierung bis hin zur fertigen Lösung.",
 
             items: [
                 "Moderne Webanwendungen",
                 "Benutzeroberflächen",
                 "Anwendungssysteme und Logik",
-                "Responsive Erlebnisse",
+                "Responsive Benutzererlebnisse",
                 "Projekte von Grund auf",
                 "Experimentieren mit neuen Technologien",
             ],
@@ -523,7 +528,7 @@ const de = {
             title: "Das ist erst der Anfang.",
 
             description:
-                "Das Portfolio wird gemeinsam mit mir weiter wachsen – neue Projekte, Erfahrungen und nächste Schritte werden hier mit meiner weiteren Entwicklung erscheinen.",
+                "Das Portfolio wird gemeinsam mit mir wachsen — neue Projekte, Erfahrungen und nächste Schritte werden hier erscheinen, während ich mich weiterentwickle.",
         },
     },
 

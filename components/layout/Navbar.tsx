@@ -126,11 +126,11 @@ export default function Navbar() {
                                 tracking-wide
                                 text-white
                                 transition
-                                hover:text-violet-400
+                                hover:text-blue-400
                             "
                         >
                             Tomasz Zdebiak
-                            <span className="text-violet-400">.</span>
+                            <span className="text-blue-400">.</span>
                         </Link>
                     </div>
 
@@ -152,7 +152,7 @@ export default function Navbar() {
                                     font-medium
                                     text-zinc-300
                                     transition
-                                    hover:text-violet-400
+                                    hover:text-blue-400
                                 "
                             >
                                 {link.label}
@@ -179,14 +179,17 @@ export default function Navbar() {
                             className="
                                 hidden
                                 rounded-xl
-                                bg-violet-600
+                                bg-[#2563eb]
                                 px-4
                                 py-2
                                 text-sm
                                 font-semibold
                                 text-white
-                                transition
-                                hover:bg-violet-500
+                                transition-all
+                                duration-300
+                                hover:bg-[#3b82f6]
+                                hover:shadow-lg
+                                hover:shadow-blue-500/10
                                 xl:block
                             "
                         >
@@ -200,9 +203,10 @@ export default function Navbar() {
                             className="
                                 text-3xl
                                 text-white
-                                transition-transform
+                                transition-all
                                 duration-300
                                 hover:scale-110
+                                hover:text-blue-400
                                 xl:hidden
                             "
                             aria-label="Toggle menu"
@@ -245,7 +249,7 @@ export default function Navbar() {
                                     className="
                                         text-zinc-300
                                         transition
-                                        hover:text-violet-400
+                                        hover:text-blue-400
                                     "
                                 >
                                     {link.label}
@@ -254,6 +258,8 @@ export default function Navbar() {
 
                             <LanguageSwitcher />
 
+                            {/* Mobile Contact */}
+
                             <a
                                 href="#contact"
                                 onClick={(e) =>
@@ -261,14 +267,17 @@ export default function Navbar() {
                                 }
                                 className="
                                     rounded-xl
-                                    bg-violet-600
+                                    bg-[#2563eb]
                                     px-4
                                     py-3
                                     text-center
                                     font-semibold
                                     text-white
-                                    transition
-                                    hover:bg-violet-500
+                                    transition-all
+                                    duration-300
+                                    hover:bg-[#3b82f6]
+                                    hover:shadow-lg
+                                    hover:shadow-blue-500/10
                                 "
                             >
                                 {t.navbar.contact}

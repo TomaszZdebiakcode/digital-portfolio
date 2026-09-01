@@ -28,6 +28,10 @@ const screenshots = [
         image: "/images/portfolio-projects.webp",
     },
     {
+        key: "arsenal",
+        image: "/images/portfolio-arsenal.webp",
+    },
+    {
         key: "contact",
         image: "/images/portfolio-contact.webp",
     },
@@ -65,7 +69,7 @@ export default function EngineerPortfolioPage() {
                         font-medium
                         text-zinc-300
                         transition
-                        hover:border-violet-500/50
+                        hover:border-white/20
                         hover:bg-zinc-900
                         hover:text-white
                     "
@@ -80,11 +84,40 @@ export default function EngineerPortfolioPage() {
             <section className="mx-auto w-full max-w-6xl px-4 pb-20 pt-14 sm:px-6 sm:pb-24 sm:pt-16 lg:px-8 lg:pb-28">
                 <div className="max-w-4xl">
                     <div className="mb-5 flex flex-wrap items-center gap-3">
-                        <span className="rounded-full bg-violet-500/10 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-violet-400">
+                        <span
+                            className="
+                                rounded-full
+                                border
+                                border-blue-500/15
+                                bg-blue-500/[0.04]
+                                px-3
+                                py-1.5
+                                text-xs
+                                font-semibold
+                                uppercase
+                                tracking-wider
+                                text-blue-400
+                            "
+                        >
                             {story.eyebrow}
                         </span>
 
-                        <span className="flex items-center gap-1.5 rounded-full bg-green-500/10 px-3 py-1.5 text-xs font-semibold text-green-400">
+                        <span
+                            className="
+                                flex
+                                items-center
+                                gap-1.5
+                                rounded-full
+                                border
+                                border-green-500/15
+                                bg-green-500/[0.04]
+                                px-3
+                                py-1.5
+                                text-xs
+                                font-semibold
+                                text-green-400
+                            "
+                        >
                             <CheckCircle2 className="h-3.5 w-3.5" />
                             {story.status}
                         </span>
@@ -126,7 +159,7 @@ export default function EngineerPortfolioPage() {
                                         sm:text-sm
                                     "
                                 >
-                                    <Icon className="h-4 w-4 text-violet-400" />
+                                    <Icon className="h-4 w-4 text-blue-400" />
                                     {skill.label}
                                 </span>
                             );
@@ -146,17 +179,17 @@ export default function EngineerPortfolioPage() {
                                 justify-center
                                 gap-2
                                 rounded-xl
-                                bg-violet-500
+                                bg-white
                                 px-6
                                 py-3
                                 text-sm
                                 font-semibold
-                                text-white
+                                text-black
                                 transition
                                 hover:-translate-y-0.5
-                                hover:bg-violet-400
+                                hover:bg-zinc-200
                                 hover:shadow-xl
-                                hover:shadow-violet-500/20
+                                hover:shadow-white/10
                                 sm:w-auto
                             "
                         >
@@ -172,7 +205,7 @@ export default function EngineerPortfolioPage() {
             <section className="border-y border-zinc-900 bg-zinc-950/60">
                 <div className="mx-auto grid w-full max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1fr_1.5fr] lg:gap-20 lg:px-8">
                     <div>
-                        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-violet-400">
+                        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400">
                             {story.about.eyebrow}
                         </p>
 
@@ -205,7 +238,7 @@ export default function EngineerPortfolioPage() {
                                         p-5
                                     "
                                 >
-                                    <CheckCircle2 className="h-5 w-5 text-violet-400" />
+                                    <CheckCircle2 className="h-5 w-5 text-blue-400" />
 
                                     <p className="mt-3 text-sm leading-6 text-zinc-300">
                                         {point}
@@ -221,7 +254,7 @@ export default function EngineerPortfolioPage() {
 
             <section className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
                 <div className="mb-12 max-w-2xl sm:mb-16">
-                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-violet-400">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400">
                         {story.gallery.eyebrow}
                     </p>
 
@@ -244,7 +277,26 @@ export default function EngineerPortfolioPage() {
                                 className="group"
                             >
                                 <div className="mb-6 flex items-start gap-4">
-                                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-violet-500/20 bg-violet-500/10 text-sm font-bold text-violet-400">
+                                    <span
+                                        className="
+                                            flex
+                                            h-10
+                                            w-10
+                                            shrink-0
+                                            items-center
+                                            justify-center
+                                            rounded-xl
+                                            border
+                                            border-zinc-800
+                                            bg-zinc-900
+                                            text-sm
+                                            font-bold
+                                            text-zinc-500
+                                            transition
+                                            group-hover:border-blue-500/20
+                                            group-hover:text-blue-400
+                                        "
+                                    >
                                         0{index + 1}
                                     </span>
 
@@ -270,7 +322,7 @@ export default function EngineerPortfolioPage() {
                                         shadow-black/20
                                         transition
                                         duration-500
-                                        group-hover:border-violet-500/30
+                                        group-hover:border-white/15
                                     "
                                 >
                                     <Image
@@ -301,7 +353,7 @@ export default function EngineerPortfolioPage() {
                 <div className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6 sm:py-24 lg:px-8">
                     <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
                         <div>
-                            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-violet-400">
+                            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400">
                                 {story.work.eyebrow}
                             </p>
 
@@ -327,9 +379,11 @@ export default function EngineerPortfolioPage() {
                                         border-zinc-800
                                         bg-zinc-900/60
                                         p-5
+                                        transition
+                                        hover:border-white/10
                                     "
                                 >
-                                    <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-violet-400" />
+                                    <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-blue-400" />
 
                                     <span className="text-sm leading-6 text-zinc-300">
                                         {item}
@@ -348,15 +402,15 @@ export default function EngineerPortfolioPage() {
                     className="
                         rounded-3xl
                         border
-                        border-violet-500/20
-                        bg-violet-500/[0.04]
+                        border-zinc-800
+                        bg-zinc-950
                         p-8
                         text-center
                         sm:p-12
                         lg:p-16
                     "
                 >
-                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-violet-400">
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-blue-400">
                         {story.next.eyebrow}
                     </p>
 
@@ -378,14 +432,14 @@ export default function EngineerPortfolioPage() {
                                 justify-center
                                 gap-2
                                 rounded-xl
-                                bg-violet-500
+                                bg-white
                                 px-6
                                 py-3
                                 text-sm
                                 font-semibold
-                                text-white
+                                text-black
                                 transition
-                                hover:bg-violet-400
+                                hover:bg-zinc-200
                             "
                         >
                             {story.visitPortfolio}
@@ -409,7 +463,7 @@ export default function EngineerPortfolioPage() {
                                 font-semibold
                                 text-zinc-200
                                 transition
-                                hover:border-violet-400
+                                hover:border-white/20
                                 hover:bg-zinc-900
                             "
                         >

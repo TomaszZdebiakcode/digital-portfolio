@@ -10,11 +10,29 @@ export default function Contact() {
 
     return (
         <section id="contact" className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
-            <div className="overflow-hidden rounded-3xl border border-violet-500/30 bg-gradient-to-br from-violet-500/10 to-zinc-900 p-6 md:p-8 lg:p-12">
-                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-violet-400">
+            <div
+                className="
+                    overflow-hidden
+                    rounded-3xl
+                    border
+                    border-white/10
+                    bg-zinc-950
+                    p-6
+                    transition-all
+                    duration-500
+                    hover:border-white/20
+                    hover:shadow-2xl
+                    hover:shadow-white/[0.02]
+                    md:p-8
+                    lg:p-12
+                "
+            >
+                {/* Eyebrow */}
+                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-blue-400">
                     {t.contact.section}
                 </p>
 
+                {/* Title */}
                 <h2 className="max-w-4xl break-words text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
                     {t.contact.titleStart}{" "}
                     <span className="sm:hidden">
@@ -27,6 +45,7 @@ export default function Contact() {
                     {t.contact.titleEnd}
                 </h2>
 
+                {/* Description */}
                 <p className="mt-8 max-w-3xl break-words text-base leading-8 text-zinc-400 sm:text-lg">
                     {t.contact.description}
                 </p>
@@ -45,7 +64,7 @@ export default function Contact() {
                             justify-center
                             gap-3
                             rounded-2xl
-                            bg-violet-500
+                            bg-blue-600
                             px-6
                             py-4
                             font-semibold
@@ -53,16 +72,18 @@ export default function Contact() {
                             transition-all
                             duration-300
                             hover:-translate-y-1
-                            hover:bg-violet-400
+                            hover:bg-blue-500
                             hover:shadow-xl
-                            hover:shadow-violet-500/20
+                            hover:shadow-blue-500/15
                             sm:w-auto
                             sm:px-8
                         "
                     >
                         <FaLinkedin className="h-5 w-5 shrink-0" />
+
                         Contact me on LinkedIn
-                        <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
+
+                        <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                     </a>
 
                     {/* Secondary contact */}
@@ -77,7 +98,8 @@ export default function Contact() {
                                 gap-2
                                 text-zinc-300
                                 transition-colors
-                                hover:text-violet-400
+                                duration-300
+                                hover:text-blue-400
                             "
                         >
                             <Mail className="h-4 w-4" />

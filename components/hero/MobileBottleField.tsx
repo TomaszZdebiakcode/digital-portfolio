@@ -14,7 +14,7 @@ export default function MobileBottleField() {
                 sm:hidden
             "
         >
-            {/* Subtle green atmosphere */}
+            {/* Subtle blue atmosphere */}
             <div
                 className="
                     absolute
@@ -23,7 +23,7 @@ export default function MobileBottleField() {
                     h-[280px]
                     w-[280px]
                     rounded-full
-                    bg-emerald-500/[0.025]
+                    bg-blue-500/[0.025]
                     blur-[70px]
                 "
             />
@@ -36,7 +36,7 @@ export default function MobileBottleField() {
                     top-[9%]
                     h-28
                     w-14
-                    text-emerald-400
+                    text-blue-400
                     opacity-25
                 "
                 style={{
@@ -45,7 +45,7 @@ export default function MobileBottleField() {
                 }}
             />
 
-            {/* Violet can */}
+            {/* Blue can */}
             <CanIcon
                 className="
                     absolute
@@ -53,7 +53,7 @@ export default function MobileBottleField() {
                     top-[45%]
                     h-24
                     w-14
-                    text-violet-400
+                    text-blue-400
                     opacity-20
                 "
                 style={{

@@ -11,7 +11,7 @@ export default function SkillTree() {
     return (
         <section className="mx-auto max-w-7xl px-6 py-24 lg:py-32">
             <div className="mb-16">
-                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-violet-400">
+                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-blue-400">
                     {t.skillTree.section}
                 </p>
 
@@ -28,29 +28,73 @@ export default function SkillTree() {
                         <div
                             key={card.title}
                             className="
-                h-full
-                rounded-3xl
-                border
-                border-zinc-800
-                bg-zinc-900
-                p-6
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:border-violet-500/40
-                hover:bg-zinc-800/40
-                hover:shadow-xl
-                hover:shadow-violet-500/10
-                md:p-8
-              "
+                                group
+                                relative
+                                h-full
+                                overflow-hidden
+                                rounded-3xl
+                                border
+                                border-white/10
+                                bg-zinc-950/80
+                                p-6
+                                transition-all
+                                duration-500
+                                hover:-translate-y-1
+                                hover:border-white/20
+                                hover:bg-zinc-900/80
+                                hover:shadow-xl
+                                hover:shadow-white/[0.03]
+                                md:p-8
+                            "
                         >
-                            <Icon className="mb-6 h-7 w-7 text-violet-400 sm:h-8 sm:w-8" />
+                            {/* Subtle white glow */}
+                            <div
+                                className="
+                                    pointer-events-none
+                                    absolute
+                                    -right-16
+                                    -top-16
+                                    h-40
+                                    w-40
+                                    rounded-full
+                                    bg-white/[0.025]
+                                    blur-3xl
+                                    transition-all
+                                    duration-500
+                                    group-hover:bg-white/[0.05]
+                                "
+                            />
 
-                            <h3 className="mb-4 break-words text-2xl font-bold leading-tight text-white">
+                            {/* Icon */}
+                            <div
+                                className="
+                                    relative
+                                    mb-6
+                                    flex
+                                    h-11
+                                    w-11
+                                    items-center
+                                    justify-center
+                                    rounded-xl
+                                    border
+                                    border-white/10
+                                    bg-white/[0.03]
+                                    transition-all
+                                    duration-500
+                                    group-hover:border-white/20
+                                    group-hover:bg-white/[0.06]
+                                    group-hover:shadow-lg
+                                    group-hover:shadow-white/[0.04]
+                                "
+                            >
+                                <Icon className="h-6 w-6 text-blue-400 transition-colors duration-300 group-hover:text-blue-300 sm:h-7 sm:w-7" />
+                            </div>
+
+                            <h3 className="relative mb-4 break-words text-2xl font-bold leading-tight text-white">
                                 {card.title}
                             </h3>
 
-                            <p className="break-words text-base leading-8 text-zinc-400 sm:text-lg">
+                            <p className="relative break-words text-base leading-8 text-zinc-400 sm:text-lg">
                                 {card.description}
                             </p>
                         </div>

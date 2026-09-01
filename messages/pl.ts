@@ -416,15 +416,15 @@ const pl = {
     },
 
     engineerPortfolioStory: {
-        back: "Wróć do projektów",
+        back: "Powrót do projektów",
 
         eyebrow: "BOSS #03",
         status: "✓ Pokonany",
 
-        title: "Engineer Portfolio",
+        title: "Portfolio Inżyniera",
 
         intro:
-            "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne oraz rozwój jako inżyniera oprogramowania.",
+            "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne oraz rozwój jako inżynier oprogramowania.",
 
         visitPortfolio: "Odwiedź portfolio",
 
@@ -442,7 +442,7 @@ const pl = {
                 icon: "typescript",
             },
             {
-                label: "Responsive UI",
+                label: "Responsywny interfejs",
                 icon: "responsive",
             },
         ],
@@ -452,43 +452,48 @@ const pl = {
             title: "Kim jestem?",
 
             paragraphs: [
-                "Jestem studentem trzeciego roku inżynierii oprogramowania gier. Rozwijam swoje umiejętności programistyczne zarówno poprzez studia, jak i projekty, skupiając się na tworzeniu praktycznych i dopracowanych produktów.",
+                "Jestem studentem trzeciego roku inżynierii oprogramowania, specjalizującym się w tworzeniu gier. Rozwijam swoje umiejętności programistyczne zarówno na uczelni, jak i poprzez własne projekty, skupiając się na tworzeniu praktycznych i dopracowanych produktów.",
 
-                "Na co dzień prowadzę również własny biznes ogrodniczy, który nauczył mnie odpowiedzialności, organizacji pracy i podejmowania decyzji w realnych warunkach biznesowych.",
+                "Poza studiami prowadzę również własną działalność ogrodniczą, która nauczyła mnie odpowiedzialności, organizacji oraz podejmowania decyzji w rzeczywistych sytuacjach biznesowych.",
 
-                "Obecnie pracuję nad dwoma projektami, które w najbliższym czasie ujrzą światło dzienne. Engineer Portfolio jest miejscem, w którym dokumentuję ten proces — od pierwszej koncepcji aż po gotowy produkt.",
+                "Obecnie pracuję nad dwoma projektami, które już wkrótce ujrzą światło dzienne. Engineer Portfolio jest miejscem, w którym dokumentuję ten proces — od pierwszego pomysłu aż po gotowy produkt.",
             ],
 
             points: [
-                "3. rok inżynierii oprogramowania gier",
-                "Własny biznes ogrodniczy",
-                "Dwa projekty w trakcie rozwoju",
+                "Student trzeciego roku inżynierii oprogramowania",
+                "Własna działalność ogrodnicza",
+                "Dwa projekty obecnie w fazie rozwoju",
                 "Nauka poprzez praktyczne tworzenie",
             ],
         },
 
         gallery: {
             eyebrow: "PORTFOLIO",
-            title: "Od koncepcji do produktu.",
+            title: "Od pomysłu do produktu.",
 
             description:
-                "Portfolio zostało zaprojektowane jako miejsce prezentujące moje doświadczenie, projekty oraz rozwój jako inżyniera oprogramowania.",
+                "Portfolio zostało zaprojektowane jako miejsce prezentujące moje doświadczenie, projekty oraz rozwój jako inżynier oprogramowania.",
 
             items: [
                 {
                     title: "Strona główna",
                     description:
-                        "Pierwszy kontakt z portfolio — minimalistyczny interfejs skupiony na mnie, moich projektach i tym, co tworzę.",
+                        "Pierwszy punkt kontaktu z portfolio — minimalistyczny interfejs skupiony na mnie, moich projektach i tym, co tworzę.",
                 },
                 {
                     title: "O mnie",
                     description:
-                        "Sekcja przedstawiająca moje podejście do tworzenia oprogramowania oraz drogę, którą obecnie podążam.",
+                        "Sekcja przedstawiająca moje podejście do tworzenia oprogramowania oraz ścieżkę, którą obecnie podążam.",
                 },
                 {
                     title: "Projekty",
                     description:
-                        "Miejsce, w którym prezentuję projekty, nad którymi pracuję oraz technologie wykorzystywane podczas ich tworzenia.",
+                        "Miejsce, w którym prezentuję projekty, nad którymi pracuję, oraz technologie wykorzystywane do ich tworzenia.",
+                },
+                {
+                    title: "Arsenał",
+                    description:
+                        "Sekcja przedstawiająca narzędzia, technologie i sposób pracy, których używam, aby zamieniać pomysły w praktyczne rozwiązania.",
                 },
                 {
                     title: "Kontakt",
@@ -503,14 +508,14 @@ const pl = {
             title: "Więcej niż kod.",
 
             description:
-                "Interesuje mnie cały proces tworzenia produktu — od pomysłu i projektu, przez implementację, aż po gotowe rozwiązanie.",
+                "Interesuje mnie cały proces tworzenia produktu — od początkowego pomysłu i projektu, przez implementację, aż po gotowe rozwiązanie.",
 
             items: [
                 "Nowoczesne aplikacje webowe",
                 "Interfejsy użytkownika",
                 "Systemy i logika aplikacji",
                 "Responsywne doświadczenia",
-                "Projekty rozwijane od podstaw",
+                "Projekty tworzone od podstaw",
                 "Eksperymentowanie z nowymi technologiami",
             ],
         },
@@ -520,7 +525,7 @@ const pl = {
             title: "To dopiero początek.",
 
             description:
-                "Portfolio będzie rozwijane razem ze mną — kolejne projekty, nowe doświadczenia i następne kroki pojawią się tutaj wraz z moim rozwojem.",
+                "Portfolio będzie rozwijać się razem ze mną — w miarę mojego rozwoju będą pojawiać się tutaj nowe projekty, doświadczenia i kolejne kroki.",
         },
     },
 

@@ -60,20 +60,21 @@ export default function LanguageSwitcher() {
             <button
                 onClick={() => setOpen(!open)}
                 className="
-          flex
-          items-center
-          gap-2
-          rounded-xl
-          border
-          border-white/10
-          bg-zinc-900/70
-          px-4
-          py-2
-          text-sm
-          text-white
-          transition
-          hover:border-violet-500
-        "
+                    flex
+                    items-center
+                    gap-2
+                    rounded-xl
+                    border
+                    border-white/10
+                    bg-zinc-900/70
+                    px-4
+                    py-2
+                    text-sm
+                    text-white
+                    transition
+                    hover:border-blue-400/40
+                    hover:bg-zinc-900
+                "
             >
                 <Globe size={16} />
 
@@ -91,42 +92,41 @@ export default function LanguageSwitcher() {
             {open && (
                 <div
                     className="
-            absolute
-            right-0
-            mt-2
-            w-44
-            overflow-hidden
-            rounded-xl
-            border
-            border-white/10
-            bg-zinc-900
-            shadow-2xl
-            shadow-black/40
-          "
+                        absolute
+                        right-0
+                        mt-2
+                        w-44
+                        overflow-hidden
+                        rounded-xl
+                        border
+                        border-white/10
+                        bg-zinc-950
+                        shadow-2xl
+                        shadow-black/40
+                    "
                 >
                     {languages.map((lang) => (
                         <button
                             key={lang.code}
                             onClick={() => {
                                 setLanguage(lang.code);
-
                                 setOpen(false);
                             }}
                             className={`
-                flex
-                w-full
-                items-center
-                gap-3
-                px-4
-                py-3
-                text-left
-                transition
+                                flex
+                                w-full
+                                items-center
+                                gap-3
+                                px-4
+                                py-3
+                                text-left
+                                transition
 
-                ${language === lang.code
-                                    ? "bg-violet-600 text-white"
-                                    : "text-zinc-300 hover:bg-zinc-800"
+                                ${language === lang.code
+                                    ? "bg-blue-500/15 text-white"
+                                    : "text-zinc-300 hover:bg-white/[0.05] hover:text-white"
                                 }
-              `}
+                            `}
                         >
                             <span className="text-lg">
                                 {lang.flag}

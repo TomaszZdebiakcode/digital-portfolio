@@ -44,8 +44,10 @@ type BossProject = {
     difficulty: number;
     image: string;
     imagePosition?: string;
+
     rewardsTitle: string;
     skills: Skill[];
+
     battleButton: string;
     hoverButton: string;
 
@@ -56,6 +58,7 @@ type BossProject = {
 
     href: string;
     github?: string;
+
     socialLinks?: SocialLink[];
 };
 
@@ -102,11 +105,15 @@ export default function BossCard({ project }: Props) {
                 overflow-hidden
                 rounded-2xl
                 border
-                border-zinc-800
-                bg-zinc-900/70
+                border-white/10
+                bg-zinc-950/80
                 transition-all
                 duration-500
-                hover:border-violet-500/40
+                hover:-translate-y-1
+                hover:border-white/20
+                hover:bg-zinc-950
+                hover:shadow-2xl
+                hover:shadow-white/[0.03]
             "
         >
             <div className="grid min-w-0 grid-cols-1 lg:grid-cols-2">
@@ -135,20 +142,60 @@ export default function BossCard({ project }: Props) {
 
                 <div
                     className="
+                        relative
                         flex
                         min-w-0
                         max-w-full
                         flex-col
                         justify-center
+                        overflow-hidden
                         p-6
                         md:p-8
                         lg:p-10
                     "
                 >
+                    {/* Subtle white / blue atmosphere */}
+
+                    <div
+                        className="
+                            pointer-events-none
+                            absolute
+                            -right-24
+                            -top-24
+                            h-64
+                            w-64
+                            rounded-full
+                            bg-blue-500/[0.045]
+                            blur-3xl
+                            transition-all
+                            duration-700
+                            group-hover:bg-blue-400/[0.07]
+                        "
+                    />
+
+                    <div
+                        className="
+                            pointer-events-none
+                            absolute
+                            right-[15%]
+                            top-[18%]
+                            h-32
+                            w-32
+                            rounded-full
+                            bg-white/[0.015]
+                            blur-3xl
+                            transition-all
+                            duration-700
+                            group-hover:bg-white/[0.035]
+                        "
+                    />
+
                     {/* Header */}
 
                     <div
                         className="
+                            relative
+                            z-10
                             mb-6
                             flex
                             min-w-0
@@ -164,12 +211,14 @@ export default function BossCard({ project }: Props) {
                                 w-fit
                                 max-w-full
                                 rounded-full
-                                bg-violet-500/10
+                                border
+                                border-blue-400/15
+                                bg-blue-500/[0.06]
                                 px-4
                                 py-2
                                 text-xs
                                 font-semibold
-                                text-violet-400
+                                text-blue-300
                                 sm:text-sm
                             "
                         >
@@ -181,12 +230,14 @@ export default function BossCard({ project }: Props) {
                                 w-fit
                                 max-w-full
                                 rounded-full
-                                bg-green-500/10
+                                border
+                                border-white/10
+                                bg-white/[0.03]
                                 px-4
                                 py-2
                                 text-xs
                                 font-semibold
-                                text-green-400
+                                text-zinc-300
                                 sm:text-sm
                             "
                         >
@@ -198,12 +249,15 @@ export default function BossCard({ project }: Props) {
 
                     <h3
                         className="
+                            relative
+                            z-10
                             min-w-0
                             max-w-full
                             break-words
                             text-3xl
                             font-bold
                             leading-tight
+                            tracking-tight
                             text-white
                             lg:text-4xl
                         "
@@ -215,6 +269,8 @@ export default function BossCard({ project }: Props) {
 
                     <p
                         className="
+                            relative
+                            z-10
                             mt-6
                             min-w-0
                             max-w-full
@@ -230,7 +286,7 @@ export default function BossCard({ project }: Props) {
 
                     {/* Difficulty */}
 
-                    <div className="mt-8 min-w-0">
+                    <div className="relative z-10 mt-8 min-w-0">
                         <p
                             className="
                                 mb-3
@@ -252,9 +308,11 @@ export default function BossCard({ project }: Props) {
                                         h-5
                                         w-5
                                         shrink-0
+                                        transition-colors
+                                        duration-300
                                         ${star <= project.difficulty
-                                            ? "fill-yellow-400 text-yellow-400"
-                                            : "text-zinc-600"
+                                            ? "fill-white text-white"
+                                            : "text-zinc-700"
                                         }
                                     `}
                                 />
@@ -264,9 +322,9 @@ export default function BossCard({ project }: Props) {
 
                     {/* Rewards */}
 
-                    <div className="mt-10 min-w-0 max-w-full">
+                    <div className="relative z-10 mt-10 min-w-0 max-w-full">
                         <div className="mb-4 flex min-w-0 items-center gap-2">
-                            <Trophy className="h-5 w-5 shrink-0 text-yellow-400" />
+                            <Trophy className="h-5 w-5 shrink-0 text-white/70" />
 
                             <h4
                                 className="
@@ -284,7 +342,9 @@ export default function BossCard({ project }: Props) {
                         <div className="flex min-w-0 max-w-full flex-wrap gap-3">
                             {project.skills.map((skill) => {
                                 const Icon =
-                                    icons[skill.icon as keyof typeof icons];
+                                    icons[
+                                    skill.icon as keyof typeof icons
+                                    ];
 
                                 return (
                                     <span
@@ -296,15 +356,19 @@ export default function BossCard({ project }: Props) {
                                             items-center
                                             gap-2
                                             rounded-full
-                                            bg-zinc-800
+                                            border
+                                            border-white/10
+                                            bg-white/[0.025]
                                             px-4
                                             py-2
                                             text-xs
                                             text-zinc-300
                                             transition-all
                                             duration-300
-                                            hover:scale-105
-                                            hover:bg-zinc-700
+                                            hover:-translate-y-0.5
+                                            hover:border-white/20
+                                            hover:bg-white/[0.05]
+                                            hover:text-white
                                             sm:text-sm
                                         "
                                     >
@@ -314,7 +378,7 @@ export default function BossCard({ project }: Props) {
                                                     h-4
                                                     w-4
                                                     shrink-0
-                                                    text-violet-400
+                                                    text-blue-300
                                                 "
                                             />
                                         )}
@@ -332,14 +396,16 @@ export default function BossCard({ project }: Props) {
 
                     <div
                         className="
-        mt-10
-        flex
-        min-w-0
-        max-w-full
-        flex-wrap
-        gap-3
-        xl:flex-nowrap
-    "
+                            relative
+                            z-10
+                            mt-10
+                            flex
+                            min-w-0
+                            max-w-full
+                            flex-wrap
+                            gap-3
+                            xl:flex-nowrap
+                        "
                     >
                         {/* Main Website / Battle Button */}
 
@@ -356,65 +422,65 @@ export default function BossCard({ project }: Props) {
                                     : undefined
                             }
                             className="
-            group/button
-            relative
-            flex
-            h-14
-            w-full
-            min-w-0
-            max-w-full
-            items-center
-            justify-center
-            overflow-hidden
-            rounded-xl
-            bg-violet-500
-            px-4
-            font-semibold
-            text-white
-            transition-all
-            duration-300
-            hover:-translate-y-1
-            hover:bg-violet-400
-            hover:shadow-2xl
-            hover:shadow-violet-500/20
-            xl:w-64
-            xl:shrink-0
-        "
+                                group/button
+                                relative
+                                flex
+                                h-14
+                                w-full
+                                min-w-0
+                                max-w-full
+                                items-center
+                                justify-center
+                                overflow-hidden
+                                rounded-xl
+                                bg-blue-600
+                                px-4
+                                font-semibold
+                                text-white
+                                transition-all
+                                duration-300
+                                hover:-translate-y-1
+                                hover:bg-blue-500
+                                hover:shadow-xl
+                                hover:shadow-blue-500/10
+                                xl:w-64
+                                xl:shrink-0
+                            "
                         >
                             <span
                                 className="
-                absolute
-                flex
-                max-w-full
-                items-center
-                gap-2
-                px-4
-                text-center
-                transition-all
-                duration-300
-                group-hover/button:translate-y-6
-                group-hover/button:opacity-0
-            "
+                                    absolute
+                                    flex
+                                    max-w-full
+                                    items-center
+                                    gap-2
+                                    px-4
+                                    text-center
+                                    transition-all
+                                    duration-300
+                                    group-hover/button:translate-y-6
+                                    group-hover/button:opacity-0
+                                "
                             >
                                 ⚔ {project.battleButton}
                             </span>
 
                             <span
                                 className="
-                absolute
-                flex
-                max-w-full
-                translate-y-6
-                items-center
-                gap-2
-                px-4
-                text-center
-                opacity-0
-                transition-all
-                duration-300
-                group-hover/button:translate-y-0
-                group-hover/button:opacity-100
-            "
+                                    absolute
+                                    flex
+                                    max-w-full
+                                    translate-y-6
+                                    items-center
+                                    gap-2
+                                    px-4
+                                    text-center
+                                    opacity-0
+                                    transition-all
+                                    duration-300
+                                    group-hover/button:translate-y-0
+                                    group-hover/button:opacity-100
+                                "
                             >
                                 ▶ {project.hoverButton}
                             </span>
@@ -422,59 +488,61 @@ export default function BossCard({ project }: Props) {
 
                         {/* Social Media */}
 
-                        {project.socialLinks && project.socialLinks.length > 0 && (
-                            <div
-                                className="
-                flex
-                w-full
-                shrink-0
-                gap-3
-                xl:w-auto
-            "
-                            >
-                                {project.socialLinks.map((social) => {
-                                    const SocialIcon =
-                                        socialIcons[
-                                        social.icon as keyof typeof socialIcons
-                                        ];
+                        {project.socialLinks &&
+                            project.socialLinks.length > 0 && (
+                                <div
+                                    className="
+                                        flex
+                                        w-full
+                                        shrink-0
+                                        gap-3
+                                        xl:w-auto
+                                    "
+                                >
+                                    {project.socialLinks.map((social) => {
+                                        const SocialIcon =
+                                            socialIcons[
+                                            social.icon as keyof typeof socialIcons
+                                            ];
 
-                                    if (!SocialIcon) return null;
+                                        if (!SocialIcon) return null;
 
-                                    return (
-                                        <a
-                                            key={social.label}
-                                            href={social.href}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            aria-label={social.label}
-                                            title={social.label}
-                                            className="
-                            flex
-                            h-12
-                            w-12
-                            shrink-0
-                            items-center
-                            justify-center
-                            rounded-xl
-                            border
-                            border-zinc-700
-                            text-zinc-300
-                            transition-all
-                            duration-300
-                            hover:-translate-y-1
-                            hover:border-violet-400
-                            hover:bg-zinc-800
-                            hover:text-white
-                            xl:h-14
-                            xl:w-14
-                        "
-                                        >
-                                            <SocialIcon className="h-5 w-5" />
-                                        </a>
-                                    );
-                                })}
-                            </div>
-                        )}
+                                        return (
+                                            <a
+                                                key={social.label}
+                                                href={social.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                aria-label={social.label}
+                                                title={social.label}
+                                                className="
+                                                    flex
+                                                    h-12
+                                                    w-12
+                                                    shrink-0
+                                                    items-center
+                                                    justify-center
+                                                    rounded-xl
+                                                    border
+                                                    border-white/10
+                                                    bg-white/[0.015]
+                                                    text-zinc-400
+                                                    transition-all
+                                                    duration-300
+                                                    hover:-translate-y-1
+                                                    hover:border-blue-400/30
+                                                    hover:bg-white/[0.04]
+                                                    hover:text-white
+                                                    xl:h-14
+                                                    xl:w-14
+                                                "
+                                            >
+                                                <SocialIcon className="h-5 w-5" />
+                                            </a>
+                                        );
+                                    })}
+                                </div>
+                            )}
 
                         {/* History */}
 
@@ -484,24 +552,26 @@ export default function BossCard({ project }: Props) {
                                 <a
                                     href={project.historyHref}
                                     className="
-                    flex
-                    h-14
-                    w-full
-                    min-w-0
-                    items-center
-                    justify-center
-                    gap-2
-                    rounded-xl
-                    border
-                    border-zinc-700
-                    px-6
-                    text-center
-                    text-white
-                    transition
-                    hover:-translate-y-1
-                    hover:border-violet-400
-                    hover:bg-zinc-800
-                "
+                                        flex
+                                        h-14
+                                        w-full
+                                        min-w-0
+                                        items-center
+                                        justify-center
+                                        gap-2
+                                        rounded-xl
+                                        border
+                                        border-white/10
+                                        bg-white/[0.015]
+                                        px-6
+                                        text-center
+                                        text-zinc-300
+                                        transition-all
+                                        hover:-translate-y-1
+                                        hover:border-white/20
+                                        hover:bg-white/[0.04]
+                                        hover:text-white
+                                    "
                                 >
                                     📖 {project.historyButton}
                                 </a>
@@ -518,24 +588,26 @@ export default function BossCard({ project }: Props) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="
-                    flex
-                    h-14
-                    w-full
-                    min-w-0
-                    items-center
-                    justify-center
-                    gap-2
-                    rounded-xl
-                    border
-                    border-zinc-700
-                    px-6
-                    text-center
-                    text-white
-                    transition
-                    hover:-translate-y-1
-                    hover:border-violet-400
-                    hover:bg-zinc-800
-                "
+                                        flex
+                                        h-14
+                                        w-full
+                                        min-w-0
+                                        items-center
+                                        justify-center
+                                        gap-2
+                                        rounded-xl
+                                        border
+                                        border-white/10
+                                        bg-white/[0.015]
+                                        px-6
+                                        text-center
+                                        text-zinc-300
+                                        transition-all
+                                        hover:-translate-y-1
+                                        hover:border-white/20
+                                        hover:bg-white/[0.04]
+                                        hover:text-white
+                                    "
                                 >
                                     <Code2 className="h-5 w-5 shrink-0" />
 

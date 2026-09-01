@@ -1,4 +1,5 @@
 "use client";
+
 import BottleIcon from "@/components/hero/BottleIcon";
 import CanIcon from "@/components/hero/CanIcon";
 import { useLanguage } from "@/context/LanguageContext";
@@ -24,7 +25,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-10 sm:flex-row sm:items-end sm:justify-between">
                     {/* Message */}
                     <div>
-                        <p className="text-xs font-medium uppercase tracking-[0.3em] text-violet-400">
+                        <p className="text-xs font-medium uppercase tracking-[0.3em] text-blue-400">
                             {t.footer.eyebrow}
                         </p>
 
@@ -89,7 +90,7 @@ export default function Footer() {
             {/* Floating bottle */}
             <div className="pointer-events-none absolute bottom-[-55px] left-[12%] opacity-20">
                 <BottleIcon
-                    className="h-36 w-16 text-violet-400"
+                    className="h-36 w-16 text-blue-400"
                     style={
                         {
                             animationName: "bottleFloat",
@@ -107,7 +108,7 @@ export default function Footer() {
             {/* Floating can */}
             <div className="pointer-events-none absolute bottom-[-50px] left-1/2 -translate-x-1/2 opacity-15">
                 <CanIcon
-                    className="h-28 w-12 text-cyan-400"
+                    className="h-28 w-12 text-blue-400"
                     style={
                         {
                             animationName: "canFloat",
@@ -125,7 +126,7 @@ export default function Footer() {
             {/* Floating bottle */}
             <div className="pointer-events-none absolute bottom-[-60px] right-[15%] opacity-20">
                 <BottleIcon
-                    className="h-36 w-16 text-emerald-400"
+                    className="h-36 w-16 text-blue-400"
                     style={
                         {
                             animationName: "bottleFloat",

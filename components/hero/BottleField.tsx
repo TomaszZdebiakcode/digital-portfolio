@@ -17,44 +17,43 @@ const items: BottleItem[] = [
     {
         type: "bottle",
         className:
-            "right-[8%] top-[10%] h-32 w-14 text-emerald-400 opacity-45 sm:right-[12%] sm:top-[10%] sm:h-36 sm:w-16 sm:opacity-60",
+            "right-[8%] top-[10%] h-32 w-14 text-blue-400 opacity-45 sm:right-[12%] sm:top-[10%] sm:h-36 sm:w-16 sm:opacity-60",
         duration: "11s",
         delay: "0s",
     },
 
-    // 2 — violet can
+    // 2 — distant can
     {
         type: "can",
         className:
-            "right-[20%] top-[57%] h-28 w-16 text-violet-400 opacity-30 blur-[1px] sm:right-[24%] sm:top-[56%] sm:h-32 sm:w-18 sm:opacity-40",
+            "right-[20%] top-[57%] h-28 w-16 text-blue-400 opacity-30 blur-[1px] sm:right-[24%] sm:top-[56%] sm:h-32 sm:w-18 sm:opacity-40",
         duration: "16s",
         delay: "-8s",
     },
 
-
-
-    // 3 — plastic bottle
+    // 3 — plastic bottle — monochrome
     {
         type: "plastic",
         className:
-            "hidden sm:block right-[6%] top-[48%] h-44 w-20 text-white-400 opacity-55",
+            "hidden sm:block right-[6%] top-[48%] h-44 w-20 text-white opacity-55",
         duration: "13s",
         delay: "-6s",
     },
 
-    // 4 — cyan can
+    // 4 — blue can
     {
         type: "can",
         className:
-            "hidden sm:block right-[29%] top-[24%] h-28 w-16 text-cyan-400 opacity-50",
+            "hidden sm:block right-[29%] top-[24%] h-28 w-16 text-blue-400 opacity-50",
         duration: "14s",
         delay: "-4s",
     },
+
     // 5 — bottom bottle
     {
         type: "bottle",
         className:
-            "right-[38%] bottom-[10%] h-28 w-14 text-sky-400 opacity-30 blur-[1px] sm:right-[42%] sm:bottom-[8%] sm:h-32 sm:w-16 sm:opacity-40",
+            "right-[38%] bottom-[10%] h-28 w-14 text-blue-400 opacity-30 blur-[1px] sm:right-[42%] sm:bottom-[8%] sm:h-32 sm:w-16 sm:opacity-40",
         duration: "12s",
         delay: "-2s",
     },
@@ -63,16 +62,16 @@ const items: BottleItem[] = [
     {
         type: "plastic",
         className:
-            "right-[45%] top-[13%] h-24 w-12 text-green-300 opacity-25 blur-[2px] sm:right-[48%] sm:top-[16%] sm:h-28 sm:w-14 sm:opacity-35",
+            "right-[45%] top-[13%] h-24 w-12 text-blue-300 opacity-25 blur-[2px] sm:right-[48%] sm:top-[16%] sm:h-28 sm:w-14 sm:opacity-35",
         duration: "15s",
         delay: "-10s",
     },
 
-    // 7 — lower emerald bottle
+    // 7 — lower blue bottle
     {
         type: "bottle",
         className:
-            "right-[13%] bottom-[16%] h-32 w-14 text-emerald-300 opacity-35 sm:right-[17%] sm:bottom-[17%] sm:h-36 sm:w-16 sm:opacity-45",
+            "right-[13%] bottom-[16%] h-32 w-14 text-blue-300 opacity-35 sm:right-[17%] sm:bottom-[17%] sm:h-36 sm:w-16 sm:opacity-45",
         duration: "10s",
         delay: "-5s",
     },
@@ -81,7 +80,7 @@ const items: BottleItem[] = [
     {
         type: "can",
         className:
-            "right-[34%] top-[66%] h-24 w-12 text-cyan-300 opacity-25 blur-[2px] sm:right-[38%] sm:top-[68%] sm:h-26 sm:w-14 sm:opacity-30",
+            "right-[34%] top-[66%] h-24 w-12 text-blue-300 opacity-25 blur-[2px] sm:right-[38%] sm:top-[68%] sm:h-26 sm:w-14 sm:opacity-30",
         duration: "17s",
         delay: "-12s",
     },
@@ -90,7 +89,7 @@ const items: BottleItem[] = [
     {
         type: "bottle",
         className:
-            "right-[52%] top-[34%] h-20 w-10 text-emerald-500 opacity-20 blur-[2px] sm:right-[54%] sm:top-[34%] sm:h-24 sm:w-12 sm:opacity-25",
+            "right-[52%] top-[34%] h-20 w-10 text-blue-500 opacity-20 blur-[2px] sm:right-[54%] sm:top-[34%] sm:h-24 sm:w-12 sm:opacity-25",
         duration: "18s",
         delay: "-7s",
     },
@@ -99,7 +98,7 @@ const items: BottleItem[] = [
     {
         type: "can",
         className:
-            "right-[10%] top-[67%] h-20 w-12 text-cyan-400 opacity-25 blur-[1px] sm:right-[14%] sm:top-[68%] sm:h-24 sm:w-14 sm:opacity-35",
+            "right-[10%] top-[67%] h-20 w-12 text-blue-400 opacity-25 blur-[1px] sm:right-[14%] sm:top-[68%] sm:h-24 sm:w-14 sm:opacity-35",
         duration: "15s",
         delay: "-9s",
     },
@@ -108,7 +107,7 @@ const items: BottleItem[] = [
     {
         type: "plastic",
         className:
-            "right-[29%] top-[7%] h-28 w-14 text-lime-400 opacity-20 blur-[2px] sm:right-[32%] sm:top-[8%] sm:h-32 sm:w-16 sm:opacity-25",
+            "right-[29%] top-[7%] h-28 w-14 text-blue-300 opacity-20 blur-[2px] sm:right-[32%] sm:top-[8%] sm:h-32 sm:w-16 sm:opacity-25",
         duration: "20s",
         delay: "-13s",
     },
@@ -117,10 +116,9 @@ const items: BottleItem[] = [
     {
         type: "bottle",
         className:
-            "right-[2%] top-[27%] h-24 w-12 text-teal-300 opacity-25 blur-[1px] sm:right-[4%] sm:top-[28%] sm:h-28 sm:w-14 sm:opacity-30",
+            "right-[2%] top-[27%] h-24 w-12 text-blue-300 opacity-25 blur-[1px] sm:right-[4%] sm:top-[28%] sm:h-28 sm:w-14 sm:opacity-30",
         duration: "14s",
         delay: "-3s",
-
     },
 ];
 
@@ -128,21 +126,21 @@ const items: BottleItem[] = [
 export default function BottleField() {
     return (
         <div className="pointer-events-none absolute inset-0 z-[1] hidden sm:block overflow-hidden">
-            {/* Green atmosphere */}
+            {/* Blue atmosphere */}
             <div
                 className="
-                    absolute
-                    right-[5%]
-                    top-[20%]
-                    h-[420px]
-                    w-[420px]
-                    rounded-full
-                    bg-emerald-500/5
-                    blur-[120px]
-                    sm:h-[550px]
-                    sm:w-[550px]
-                    sm:bg-emerald-500/7
-                "
+        absolute
+        right-[5%]
+        top-[20%]
+        h-[420px]
+        w-[420px]
+        rounded-full
+        bg-blue-500/5
+        blur-[120px]
+        sm:h-[550px]
+        sm:w-[550px]
+        sm:bg-blue-500/7
+    "
             />
 
             {/* Recyclable objects */}
@@ -187,62 +185,48 @@ export default function BottleField() {
             {/* Small particles */}
             <span
                 className="
-                    absolute
-                    right-[34%]
-                    top-[31%]
-                    h-1
-                    w-1
-                    rounded-full
-                    bg-emerald-300/30
-                    blur-[1px]
-                    sm:h-1.5
-                    sm:w-1.5
-                    sm:bg-emerald-300/40
-                "
+        absolute
+        right-[34%]
+        top-[31%]
+        h-1
+        w-1
+        rounded-full
+        bg-blue-300/30
+        blur-[1px]
+        sm:h-1.5
+        sm:w-1.5
+        sm:bg-blue-300/40
+    "
             />
 
             <span
                 className="
-                    absolute
-                    right-[15%]
-                    top-[37%]
-                    h-1
-                    w-1
-                    rounded-full
-                    bg-cyan-300/30
-                    blur-[1px]
-                    sm:bg-cyan-300/40
-                "
+        absolute
+        right-[15%]
+        top-[37%]
+        h-1
+        w-1
+        rounded-full
+        bg-blue-300/30
+        blur-[1px]
+        sm:bg-blue-300/40
+    "
             />
 
             <span
                 className="
-                    absolute
-                    right-[27%]
-                    bottom-[22%]
-                    h-1
-                    w-1
-                    rounded-full
-                    bg-lime-300/25
-                    blur-[2px]
-                    sm:h-1.5
-                    sm:w-1.5
-                    sm:bg-lime-300/30
-                "
-            />
-
-            <span
-                className="
-                    absolute
-                    left-[42%]
-                    top-[42%]
-                    h-1
-                    w-1
-                    rounded-full
-                    bg-emerald-300/20
-                    blur-[2px]
-                    sm:hidden
-                "
+        absolute
+        right-[27%]
+        bottom-[22%]
+        h-1
+        w-1
+        rounded-full
+        bg-blue-300/25
+        blur-[2px]
+        sm:h-1.5
+        sm:w-1.5
+        sm:bg-blue-300/30
+    "
             />
         </div>
     );

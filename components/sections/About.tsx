@@ -6,10 +6,10 @@ export default function About() {
     const { t } = useLanguage();
 
     return (
-        <section id="about" className=" scroll-mt-32 w-full px-6 lg:px-0">
+        <section id="about" className="scroll-mt-32 w-full px-6 lg:px-0">
             <div className="space-y-10 sm:space-y-12">
                 <div>
-                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-violet-400">
+                    <p className="mb-3 text-sm uppercase tracking-[0.3em] text-blue-400">
                         {t.about.section}
                     </p>
 
