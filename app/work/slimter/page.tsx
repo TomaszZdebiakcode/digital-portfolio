@@ -26,8 +26,10 @@ const screenshots = [
 ] as const;
 
 export default function SlimterStoryPage() {
-    const { t } = useLanguage();
-    const story = t.slimterStory;
+    const { t, language } = useLanguage();
+    const baseStory = t.slimterStory;
+
+    const story = baseStory;
 
     return (
         <main className="slimter-story">
@@ -48,22 +50,9 @@ export default function SlimterStoryPage() {
                                 </span>
                             </div>
 
-                            <h1
-                                className="slimter-title"
-                                style={{
-                                    fontSize: "26px",
-                                    lineHeight: 0.92,
-                                    letterSpacing: "-0.04em",
-                                    whiteSpace: "normal",
-                                    overflowWrap: "anywhere",
-                                    wordBreak: "break-all",
-                                    maxWidth: "100%",
-                                    width: "100%",
-                                }}
-                            >
+                            <h1 className="slimter-hero-title">
                                 {story.title}
                             </h1>
-
                             <p className="slimter-intro">
                                 {story.intro}
                             </p>

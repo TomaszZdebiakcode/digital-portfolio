@@ -1,361 +1,118 @@
 const en = {
-    navbar: {
-        about: "ABOUT",
-        inventory: "ARSENAL",
-        projects: "PROJECTS",
-        contact: "LET'S TALK",
+    nav: {
+        work: "Work",
+        about: "About",
+        contact: "Contact",
+    },
+
+    header: {
+        availability: "Available for work",
     },
 
     hero: {
-        eyebrow: "ARE YOU LOOKING FOR",
-        titleLine1: "Product",
-        titleLine2: "Engineer",
+        eyebrow: "Based in Poland · 2026",
+        titleLine1: "I turn ideas",
+        titleLine2: "into products",
+        titleLine3: "people use.",
+        description:
+            "Product engineer combining code, systems thinking and business instinct — from the first rough problem to a working product.",
+        currently: "Currently",
+        currentlyText:
+            "Building, learning, looking for the next challenge.",
+    },
 
-        description1: "Crafting",
-        descriptionHighlight1: "products",
-        description2: "that people",
-        descriptionHighlight2: "remember.",
+    manifesto: {
+        eyebrow: "Approach",
+        intro: "I don't want a career built around doing the minimum.",
+        title:
+            "I build useful things, create repeatable systems and solve problems that improve how people live and work.",
+    },
 
-        button: "Contact me on LinkedIn",
+    work: {
+        eyebrow: "Selected work",
+        count: "04 projects · Product, web, systems",
 
-        story: "Read My Story",
+        projects: {
+            tomekgardens: {
+                title: "TomekGardens",
+                description: "From service idea to operating gardening business.",
+                tags: ["Founder", "React", "Growth"],
+                website: "Website",
+                social: "Social",
+            },
+
+            slimter: {
+                title: "Slimter",
+                description:
+                    "Accessible obesity education and treatment comparison.",
+                tags: ["WordPress", "Accessibility", "UX"],
+                story: "Read story",
+            },
+
+            engineerPortfolio: {
+                title: "Engineer Portfolio",
+                description:
+                    "A digital record of products, skills and progress.",
+                tags: ["Next.js", "TypeScript", "UI"],
+                story: "Read story",
+            },
+
+            bottleProject: {
+                title: "Bottle Project",
+                description:
+                    "A physical product at the intersection of technology and investment.",
+                tags: ["In development", "Product"],
+                story: "Coming soon",
+            },
+        },
     },
 
     about: {
-        section: "About",
+        eyebrow: "Operating system",
+        titleLine1: "How I",
+        titleLine2: "build.",
 
-        title: "Why I Create.",
+        principles: {
+            problem: {
+                number: "01",
+                title: "Start with the problem",
+                description:
+                    "Useful products begin with understanding what people actually need — not with choosing a technology.",
+            },
 
-        paragraph1:
-            "I don't want to build a career around doing the minimum.",
+            systems: {
+                number: "02",
+                title: "Think in systems",
+                description:
+                    "I turn one-off solutions into scalable patterns, workflows and tools that keep creating value.",
+            },
 
-        paragraph2:
-            "I want something bigger than a traditional job. I want to build products, create systems and solve problems that improve people's lives.",
-
-        paragraph3:
-            "This is where I document that process. Every project, every challenge and every quest moves me one step closer to becoming the engineer I want to be.",
+            ship: {
+                number: "03",
+                title: "Ship and learn",
+                description:
+                    "Working software creates better questions. I prototype, measure and improve through real feedback.",
+            },
+        },
     },
 
-    missionStatus: {
-        title: "Mission Status",
+    capabilities: {
+        eyebrow: "Capabilities",
 
-        currentObjective: "Current Objective",
-        currentObjectiveValue: "Become a Software Engineer.",
-
-        sideQuest: "Side Quest",
-        sideQuestValue: "Help people create beautiful gardens.",
-
-        nextExpansion: "Next Expansion",
-        nextExpansionValue: "Build products that make life easier.",
-    },
-
-    skillTree: {
-        section: "Values",
-
-        title: "How I Think.",
-
-        cards: [
-            {
-                title: "Build Products",
-
-                description:
-                    "I enjoy turning ideas into products that solve real problems and create value.",
-            },
-
-            {
-                title: "Think in Systems",
-
-                description:
-                    "I prefer building scalable systems instead of repeatedly solving the same problems.",
-            },
-
-            {
-                title: "Keep Growing",
-
-                description:
-                    "Every project is another opportunity to learn, improve and become a better engineer.",
-            },
+        items: [
+            "PRODUCT ENGINEERING",
+            "AI & AUTOMATION",
+            "SYSTEMS THINKING",
+            "PRODUCT STRATEGY",
         ],
     },
-
-    bossBattles: {
-        section: "Boss Battles",
-
-        title: "Every Boss Defeated.",
-
-        description:
-            "Every project pushed me beyond my comfort zone. Every boss battle unlocked new skills that made me a better engineer.",
-
-        projects: [
-            {
-                boss: "Boss #01",
-                status: "Defeated",
-
-                name: "TomekGardens",
-
-                description:
-                    "My own gardening business and website, built with React to showcase my services, present my work and make it easy for customers to get in touch.",
-
-                difficulty: 5,
-
-                image: "/images/tomekgardens.webp",
-
-                imagePosition: "object-[center_70%] lg:object-[center_50%]",
-
-                rewardsTitle: "Rewards Unlocked",
-
-                battleButton: "Visit Website",
-
-                hoverButton: "Explore?",
-
-                sourceButton: "Visit TomekGardens",
-
-                href: "https://tomekgardens.com",
-
-                socialLinks: [
-                    {
-                        label: "Instagram",
-                        href: "https://www.instagram.com/tomekgardens/",
-                        icon: "instagram",
-                    },
-                    {
-                        label: "Facebook",
-                        href: "https://www.facebook.com/tomekgardens",
-                        icon: "facebook",
-                    },
-                    {
-                        label: "TikTok",
-                        href: "https://www.tiktok.com/@tomekgardens",
-                        icon: "tiktok",
-                    },
-                ],
-
-                skills: [
-                    {
-                        icon: "entrepreneurship",
-                        label: "Entrepreneurship",
-                    },
-                    {
-                        icon: "advertising",
-                        label: "Advertising",
-                    },
-                    {
-                        icon: "gardening",
-                        label: "Gardening",
-                    },
-                    {
-                        icon: "product",
-                        label: "Product Creation",
-                    },
-                ],
-            },
-
-            {
-                boss: "Boss #02",
-                status: "Defeated",
-
-                name: "Slimter",
-
-                description:
-                    "A WordPress website focused on obesity education, helping users compare treatment methods through an accessible and responsive experience.",
-
-                difficulty: 5,
-
-                image: "/images/slimter.webp",
-
-                imagePosition: "object-[40%_center]",
-
-                rewardsTitle: "Rewards Unlocked",
-
-                battleButton: "Visit Website",
-                hoverButton: "Explore?",
-
-                historyButton: "Read Story",
-                historyHref: "/boss/slimter",
-
-                href: "https://slimter.com",
-                github: "#",
-
-                skills: [
-                    {
-                        icon: "wordpress",
-                        label: "WordPress",
-                    },
-                    {
-                        icon: "javascript",
-                        label: "JavaScript",
-                    },
-                    {
-                        icon: "css",
-                        label: "CSS",
-                    },
-                    {
-                        icon: "accessibility",
-                        label: "Accessibility",
-                    },
-                ],
-            },
-
-            {
-                boss: "Boss #03",
-                status: "Defeated",
-
-                name: "Engineer Portfolio",
-
-                description:
-                    "My personal digital portfolio showcasing my projects, technical skills and journey as a software engineer.",
-
-                difficulty: 5,
-
-                image: "/images/portfolio-home.webp",
-
-                imagePosition: "object-[30%_center]",
-
-                rewardsTitle: "Rewards Unlocked",
-
-                battleButton: "Enter Battle",
-
-                hoverButton: "Ready?",
-
-                sourceButton: "Source Code",
-
-                href: "/boss/engineer-portfolio",
-
-                github: "https://github.com/TomaszZdebiakcode/digital-portfolio",
-
-                skills: [
-                    {
-                        icon: "react",
-                        label: "React",
-                    },
-                    {
-                        icon: "next",
-                        label: "Next.js",
-                    },
-                    {
-                        icon: "tailwind",
-                        label: "Tailwind CSS",
-                    },
-                    {
-                        icon: "responsive",
-                        label: "Responsive UI",
-                    },
-                ],
-            },
-            {
-                boss: "Boss #04",
-                status: "In Development",
-
-                name: "Bottle Project",
-
-                description:
-                    "A future project built around a real-world product, combining technology, product development and investment thinking.",
-
-                difficulty: 5,
-
-                image: "/images/bottle_project.webp",
-
-                imagePosition: "object-center",
-
-                rewardsTitle: "Rewards Unlocked",
-
-                battleButton: "Coming Soon",
-
-                hoverButton: "Explore?",
-
-                href: "/boss/bottle-project",
-
-                skills: [
-                    {
-                        icon: "product",
-                        label: "Product Development",
-                    },
-                    {
-                        icon: "investment",
-                        label: "Investment",
-                    },
-                    {
-                        icon: "technology",
-                        label: "Technology",
-                    },
-                    {
-                        icon: "entrepreneurship",
-                        label: "Entrepreneurship",
-                    },
-                ],
-            },
-
-        ],
-
-    },
-
-    inventory: {
-        section: "ARSENAL",
-        title: "Tools I turn into an advantage.",
-        description:
-            "I combine AI, automation and solid implementation to build products faster and eliminate repetitive work.",
-
-        ai: {
-            title: "AI",
-            description:
-                "I use AI as part of my everyday workflow — from problem analysis and prototyping to product development and documentation.",
-            tags: [
-                "AI-assisted development",
-                "Prompting",
-                "Prototyping",
-            ],
-        },
-
-        automation: {
-            title: "Automation",
-            description:
-                "I automate repetitive tasks, integrations and workflows to reduce manual work and save time.",
-            tags: [
-                "Workflows",
-                "APIs",
-                "Integrations",
-            ],
-        },
-
-        implementation: {
-            title: "Implementation",
-            description:
-                "I turn ideas into working products — from the first prototype through integration and deployment.",
-            tags: [
-                "Next.js",
-                "React",
-                "TypeScript",
-                "WordPress",
-            ],
-        },
-
-        optimization: {
-            title: "Optimization",
-            description:
-                "I look for ways to simplify processes, reduce execution time and improve how work gets done.",
-            tags: [
-                "Performance",
-                "UX",
-                "Process optimization",
-            ],
-        },
-    },
-
-
 
     contact: {
-        section: "Final Boss",
-
-        titleStart: "Let's Build",
-
-        titleMiddle: "Something",
-
-        titleEnd: "Great.",
-
-        description:
-            "I'm currently looking for Software Engineering opportunities, freelance projects and collaborations. If you have an idea, a challenge or just want to connect, let's start the next quest together.",
-
-        emailButton: "Send Email",
+        eyebrow: "Have a worthwhile problem?",
+        titleLine1: "Let's build",
+        titleLine2: "the useful thing.",
+        email: "TomaszZdebiak@gmail.com",
+        linkedin: "LinkedIn",
     },
 
     slimterStory: {
@@ -457,10 +214,6 @@ const en = {
         },
 
 
-    },
-
-    developerCard: {
-        availability: "Open to Work",
     },
 
     engineerPortfolioStory: {
@@ -577,13 +330,58 @@ const en = {
         },
     },
 
+    bottleStory: {
+        back: "Back to Projects",
+        project: "Project 04",
+        status: "In development",
+        title: "Bottle Project",
+        intro: "A physical product at the intersection of technology and investment.",
+        tags: ["In development", "Product"],
+        imageAlt: "Bottle Project",
+
+        idea: {
+            eyebrow: "The Idea",
+            title: "A product idea still taking shape.",
+            paragraphs: [
+                "Bottle Project is an early-stage product concept. The goal is to explore the space between a physical product, technology and a viable investment opportunity.",
+                "Rather than presenting a finished product before it is ready, this page keeps the project deliberately open. The concept, technology and business model are still being developed.",
+            ],
+        },
+
+        exploring: {
+            eyebrow: "What I'm Exploring",
+            title: "Three sides of the product.",
+            items: [
+                {
+                    number: "01",
+                    title: "Product",
+                    text: "A physical product concept where technology, usability and investment potential meet.",
+                },
+                {
+                    number: "02",
+                    title: "Technology",
+                    text: "Exploring how a physical object can be connected with a useful digital layer.",
+                },
+                {
+                    number: "03",
+                    title: "Business",
+                    text: "Thinking beyond the object itself — from the product idea to a repeatable business model.",
+                },
+            ],
+        },
+
+        next: {
+            eyebrow: "Bottle Project",
+            title: "More when it's ready.",
+            description: "This project is still in development. The next version of the story will follow when there is a product worth showing.",
+            contact: "Start a conversation",
+        },
+    },
+
     footer: {
-        eyebrow: "BUILD CREATE DEFEAT",
-        lineOne: "Still building. Still learning. Still growing",
-        lineTwo: "The next level is always ahead",
+        copyright: "© 2026 Tomasz Zdebiak",
+        tagline: "Designed for clarity. Built to evolve.",
         backToTop: "Back to top",
-        copyright: "All rights reserved",
-        designedBy: "Designed & Developed by",
     },
 };
 

@@ -1,37 +1,31 @@
-import Hero from "@/components/sections/Hero";
-import MissionStatus from "@/components/sections/MissionStatus";
-import About from "@/components/sections/About";
-import SkillTree from "@/components/sections/SkillTree";
-import BossBattles from "@/components/boss/BossBattles";
-import Inventory from "@/components/sections/Inventory";
-import Contact from "@/components/sections/Contact";
-import HashScrollHandler from "@/components/utils/HashScrollHandler";
-
+import Header from "@/components/portfolio/Header";
+import Hero from "@/components/portfolio/Hero";
+import Manifesto from "@/components/portfolio/Manifesto";
+import Work from "@/components/portfolio/Work";
+import About from "@/components/portfolio/About";
+import Capabilities from "@/components/portfolio/Capabilities";
+import Contact from "@/components/portfolio/Contact";
+import Footer from "@/components/portfolio/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-zinc-950 text-white">
-      <HashScrollHandler />
-      <Hero />
+    <>
+      <a className="skip" href="#main">
+        Skip to content
+      </a>
 
-      <section className="mx-auto max-w-7xl px-6 py-32">
-        <div className="grid gap-20 lg:grid-cols-2 lg:items-start">
+      <Header />
 
-          <MissionStatus />
+      <main id="main">
+        <Hero />
+        <Manifesto />
+        <Work />
+        <About />
+        <Capabilities />
+        <Contact />
+      </main>
 
-          <About />
-
-        </div>
-      </section>
-
-      <SkillTree />
-
-      <BossBattles />
-
-      <Inventory />
-
-      <Contact />
-
-    </main>
+      <Footer />
+    </>
   );
 }
