@@ -67,12 +67,12 @@ const projects: Project[] = [
     {
         number: "03",
         key: "engineerPortfolio",
-        href: "https://github.com/ZdebiakTomasz",
-        image: "/images/portfolio-home.webp",
+        href: "https://github.com/TomaszZdebiakcode/digital-portfolio",
+        image: "/images/home.webp",
         links: [
             {
                 label: "GitHub",
-                href: "https://github.com/ZdebiakTomasz",
+                href: "https://github.com/TomaszZdebiakcode/digital-portfolio",
                 external: true,
             },
             {

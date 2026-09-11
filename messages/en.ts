@@ -217,49 +217,26 @@ const en = {
     },
 
     engineerPortfolioStory: {
-        back: "Back to projects",
-
+        back: "Back to Projects",
         eyebrow: "BOSS #03",
         status: "✓ Defeated",
-
         title: "Engineer Portfolio",
-
-        intro:
-            "My digital portfolio showcasing my projects, technical skills and development as a software engineer.",
-
+        intro: "My digital portfolio showcasing my projects, technical skills and development as a software engineer.",
         visitPortfolio: "Visit Portfolio",
-
         skills: [
-            {
-                label: "React",
-                icon: "react",
-            },
-            {
-                label: "Next.js",
-                icon: "nextjs",
-            },
-            {
-                label: "TypeScript",
-                icon: "typescript",
-            },
-            {
-                label: "Responsive UI",
-                icon: "responsive",
-            },
+            { label: "React", icon: "react" },
+            { label: "Next.js", icon: "nextjs" },
+            { label: "TypeScript", icon: "typescript" },
+            { label: "Responsive UI", icon: "responsive" },
         ],
-
         about: {
             eyebrow: "ABOUT ME",
             title: "Who am I?",
-
             paragraphs: [
                 "I am a third-year Software Engineering student specializing in game development. I develop my programming skills through both university and projects, focusing on building practical and well-crafted products.",
-
                 "Alongside my studies, I also run my own gardening business, which has taught me responsibility, organization and how to make decisions in real-world business situations.",
-
                 "I am currently working on two projects that will see the light of day in the near future. Engineer Portfolio is where I document that process — from the first concept to the finished product.",
             ],
-
             points: [
                 "Third-year Software Engineering student",
                 "Own gardening business",
@@ -267,50 +244,22 @@ const en = {
                 "Learning through practical creation",
             ],
         },
-
         gallery: {
             eyebrow: "PORTFOLIO",
             title: "From concept to product.",
-
-            description:
-                "The portfolio was designed as a place to showcase my experience, projects and development as a software engineer.",
-
+            description: "A digital portfolio built to present who I am, what I build, how I work and where I am heading as a software engineer.",
             items: [
-                {
-                    title: "Home Page",
-                    description:
-                        "The first point of contact with the portfolio — a minimalist interface focused on me, my projects and what I create.",
-                },
-                {
-                    title: "About",
-                    description:
-                        "A section presenting my approach to software development and the path I am currently following.",
-                },
-                {
-                    title: "Projects",
-                    description:
-                        "A place where I showcase the projects I work on and the technologies I use to build them.",
-                },
-                {
-                    title: "Arsenal",
-                    description:
-                        "A section presenting the tools, technologies and workflows I use to turn ideas into practical solutions.",
-                },
-                {
-                    title: "Contact",
-                    description:
-                        "A simple way to get in touch and start a conversation.",
-                },
+                { title: "Home", description: "The main landing page of the portfolio — a focused introduction presenting who I am, what I build and what I am working towards." },
+                { title: "Info", description: "A section focused on my background, experience and the information that gives more context about me as a software engineer." },
+                { title: "Projects", description: "A collection of selected projects, showing what I have built, what I am currently working on and the technologies behind them." },
+                { title: "About", description: "A deeper look at my skills, tools and technologies — the practical arsenal I use to turn ideas into working products." },
+                { title: "Contact", description: "A simple contact section designed to make it easy to reach out and start a conversation." },
             ],
         },
-
         work: {
             eyebrow: "WHAT I BUILD",
             title: "More than code.",
-
-            description:
-                "I am interested in the entire product creation process — from the initial idea and design, through implementation, to the finished solution.",
-
+            description: "I am interested in the entire product creation process — from the initial idea and design, through implementation, to the finished solution.",
             items: [
                 "Modern web applications",
                 "User interfaces",
@@ -320,13 +269,10 @@ const en = {
                 "Experimenting with new technologies",
             ],
         },
-
         next: {
             eyebrow: "WHAT'S NEXT?",
             title: "This is only the beginning.",
-
-            description:
-                "The portfolio will grow alongside me — new projects, experiences and next steps will appear here as I continue to develop.",
+            description: "The portfolio will grow alongside me — new projects, experiences and next steps will appear here as I continue to develop.",
         },
     },
 

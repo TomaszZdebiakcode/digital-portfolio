@@ -103,7 +103,7 @@ export default function BottleProjectPage() {
                 <div className="bottle-shell">
                     <div className="bottle-large-image">
                         <Image
-                            src="/images/bottle_project.webp"
+                            src="/images/bottleprojectp2.webp"
                             alt={story.imageAlt}
                             width={1800}
                             height={1200}

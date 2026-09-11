@@ -7,11 +7,26 @@ import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const screenshots = [
-    { key: "hero", image: "/images/portfolio-home.webp" },
-    { key: "about", image: "/images/portfolio-about.webp" },
-    { key: "projects", image: "/images/portfolio-projects.webp" },
-    { key: "arsenal", image: "/images/portfolio-arsenal.webp" },
-    { key: "contact", image: "/images/portfolio-contact.webp" },
+    {
+        key: "hero",
+        image: "/images/home.webp",
+    },
+    {
+        key: "info",
+        image: "/images/info.webp",
+    },
+    {
+        key: "projects",
+        image: "/images/work.webp",
+    },
+    {
+        key: "about",
+        image: "/images/about.webp",
+    },
+    {
+        key: "contact",
+        image: "/images/contact.webp",
+    },
 ] as const;
 
 export default function EngineerPortfolioPage() {
@@ -20,9 +35,14 @@ export default function EngineerPortfolioPage() {
 
     return (
         <main className="engineer-story">
+            {/* HERO */}
+
             <header className="engineer-hero">
                 <div className="engineer-shell">
-                    <Link className="engineer-back" href="/#work">
+                    <Link
+                        className="engineer-back"
+                        href="/#work"
+                    >
                         <ArrowLeft aria-hidden="true" />
                         {story.back}
                     </Link>
@@ -53,13 +73,16 @@ export default function EngineerPortfolioPage() {
                                 href="/"
                             >
                                 {story.visitPortfolio}
-                                <ArrowUpRight aria-hidden="true" />
+
+                                <ArrowUpRight
+                                    aria-hidden="true"
+                                />
                             </Link>
                         </div>
 
                         <div className="engineer-hero-image">
                             <Image
-                                src="/images/portfolio-home.webp"
+                                src="/images/home.webp"
                                 alt={story.title}
                                 width={1600}
                                 height={900}
@@ -70,40 +93,65 @@ export default function EngineerPortfolioPage() {
                 </div>
             </header>
 
+            {/* ABOUT */}
+
             <section className="engineer-section engineer-about">
                 <div className="engineer-shell engineer-section-grid">
                     <div className="engineer-label">
-                        <p className="eyebrow">{story.about.eyebrow}</p>
+                        <p className="eyebrow">
+                            {story.about.eyebrow}
+                        </p>
                     </div>
 
                     <div className="engineer-section-content">
                         <h2>{story.about.title}</h2>
 
                         <div className="engineer-copy-stack">
-                            {story.about.paragraphs.map((paragraph) => (
-                                <p className="engineer-copy" key={paragraph}>
-                                    {paragraph}
-                                </p>
-                            ))}
+                            {story.about.paragraphs.map(
+                                (paragraph) => (
+                                    <p
+                                        className="engineer-copy"
+                                        key={paragraph}
+                                    >
+                                        {paragraph}
+                                    </p>
+                                )
+                            )}
                         </div>
 
                         <div className="engineer-point-grid">
-                            {story.about.points.map((point, index) => (
-                                <div className="engineer-point" key={point}>
-                                    <span>0{index + 1}</span>
-                                    <p>{point}</p>
-                                </div>
-                            ))}
+                            {story.about.points.map(
+                                (point, index) => (
+                                    <div
+                                        className="engineer-point"
+                                        key={point}
+                                    >
+                                        <span>
+                                            {String(
+                                                index + 1
+                                            ).padStart(2, "0")}
+                                        </span>
+
+                                        <p>{point}</p>
+                                    </div>
+                                )
+                            )}
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* PORTFOLIO */}
+
             <section className="engineer-section engineer-gallery">
                 <div className="engineer-shell">
                     <div className="engineer-gallery-intro">
-                        <p className="eyebrow">{story.gallery.eyebrow}</p>
+                        <p className="eyebrow">
+                            {story.gallery.eyebrow}
+                        </p>
+
                         <h2>{story.gallery.title}</h2>
+
                         <p className="engineer-copy">
                             {story.gallery.description}
                         </p>
@@ -111,7 +159,8 @@ export default function EngineerPortfolioPage() {
 
                     <div className="engineer-screens">
                         {screenshots.map((item, index) => {
-                            const content = story.gallery.items[index];
+                            const content =
+                                story.gallery.items[index];
 
                             return (
                                 <article
@@ -119,11 +168,22 @@ export default function EngineerPortfolioPage() {
                                     key={item.key}
                                 >
                                     <div className="engineer-screen-head">
-                                        <span>0{index + 1}</span>
+                                        <span>
+                                            {String(
+                                                index + 1
+                                            ).padStart(2, "0")}
+                                        </span>
 
                                         <div>
-                                            <h3>{content.title}</h3>
-                                            <p>{content.description}</p>
+                                            <h3>
+                                                {content.title}
+                                            </h3>
+
+                                            <p>
+                                                {
+                                                    content.description
+                                                }
+                                            </p>
                                         </div>
                                     </div>
 
@@ -143,10 +203,14 @@ export default function EngineerPortfolioPage() {
                 </div>
             </section>
 
+            {/* WHAT I BUILD */}
+
             <section className="engineer-section engineer-work">
                 <div className="engineer-shell engineer-section-grid">
                     <div className="engineer-label">
-                        <p className="eyebrow">{story.work.eyebrow}</p>
+                        <p className="eyebrow">
+                            {story.work.eyebrow}
+                        </p>
                     </div>
 
                     <div className="engineer-section-content">
@@ -157,20 +221,31 @@ export default function EngineerPortfolioPage() {
                         </p>
 
                         <div className="engineer-contribution">
-                            {story.work.items.map((item, index) => (
-                                <div key={item}>
-                                    <span>0{index + 1}</span>
-                                    <p>{item}</p>
-                                </div>
-                            ))}
+                            {story.work.items.map(
+                                (item, index) => (
+                                    <div key={item}>
+                                        <span>
+                                            {String(
+                                                index + 1
+                                            ).padStart(2, "0")}
+                                        </span>
+
+                                        <p>{item}</p>
+                                    </div>
+                                )
+                            )}
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* NEXT */}
+
             <section className="engineer-next">
                 <div className="engineer-shell">
-                    <p className="eyebrow">{story.next.eyebrow}</p>
+                    <p className="eyebrow">
+                        {story.next.eyebrow}
+                    </p>
 
                     <h2>{story.next.title}</h2>
 
@@ -182,11 +257,17 @@ export default function EngineerPortfolioPage() {
                             href="/"
                         >
                             {story.visitPortfolio}
-                            <ArrowUpRight aria-hidden="true" />
+
+                            <ArrowUpRight
+                                aria-hidden="true"
+                            />
                         </Link>
 
                         <Link href="/#work">
-                            <ArrowLeft aria-hidden="true" />
+                            <ArrowLeft
+                                aria-hidden="true"
+                            />
+
                             {story.back}
                         </Link>
                     </div>

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Tomasz Zdebiak",
     images: [
       {
-        url: "/images/og-image.png",
+        url: "/images/home.webp",
         width: 1920,
         height: 1080,
         alt: "Tomasz Zdebiak — Product Engineer",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title: "Tomasz Zdebiak — Product Engineer",
     description:
       "Tomasz Zdebiak is a product engineer turning real-world problems into useful digital products.",
-    images: ["/images/portfolio-home.webp"],
+    images: ["/images/home.webp"],
   },
 };
 
