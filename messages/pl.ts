@@ -1,356 +1,119 @@
 const pl = {
-    navbar: {
-        about: "O MNIE",
-        inventory: "ARSENAŁ",
-        projects: "PROJEKTY",
-        contact: "POROZMAWIAJMY",
+    nav: {
+        work: "Projekty",
+        about: "O mnie",
+        contact: "Kontakt",
+    },
+
+    header: {
+        availability: "Available for work",
     },
 
     hero: {
-        eyebrow: "CZEGO SZUKASZ?",
-        titleLine1: "Product",
-        titleLine2: "Engineer",
+        eyebrow: "Based in Poland · 2026",
+        titleLine1: "Zamieniam pomysły",
+        titleLine2: "w produkty,",
+        titleLine3: "których ludzie używają.",
+        description:
+            "Product engineer łączący kod, myślenie systemowe i biznesowe podejście — od pierwszego problemu aż po działający produkt.",
+        currently: "Obecnie",
+        currentlyText:
+            "Buduję, uczę się i szukam kolejnego wyzwania.",
+    },
 
-        description1: "Tworzę",
-        descriptionHighlight1: "produkty",
-        description2: "które ludzie",
-        descriptionHighlight2: "zapamiętują.",
+    manifesto: {
+        eyebrow: "Podejście",
+        intro: "Nie chcę budować kariery na robieniu minimum.",
+        title:
+            "Tworzę użyteczne rzeczy, buduję powtarzalne systemy i rozwiązuję problemy, które poprawiają sposób, w jaki ludzie żyją i pracują.",
+    },
 
-        button: "Kontakt do LinkedIn",
+    work: {
+        eyebrow: "Wybrane projekty",
+        count: "04 projekty · Produkty, web, systemy",
 
-        story: "Poznaj moją historię",
+        projects: {
+            tomekgardens: {
+                title: "TomekGardens",
+                description:
+                    "Od pomysłu na usługę do działającego biznesu ogrodniczego.",
+                tags: ["Founder", "React", "Growth"],
+                website: "Strona",
+                social: "Social media",
+            },
+
+            slimter: {
+                title: "Slimter",
+                description:
+                    "Dostępna edukacja na temat otyłości i porównanie metod leczenia.",
+                tags: ["WordPress", "Accessibility", "UX"],
+                story: "Przeczytaj historię",
+            },
+
+            engineerPortfolio: {
+                title: "Engineer Portfolio",
+                description:
+                    "Cyfrowy zapis produktów, umiejętności i rozwoju.",
+                tags: ["Next.js", "TypeScript", "UI"],
+                story: "Przeczytaj historię",
+            },
+
+            bottleProject: {
+                title: "Bottle Project",
+                description:
+                    "Fizyczny produkt na styku technologii i myślenia inwestycyjnego.",
+                tags: ["W fazie rozwoju", "Product"],
+                story: "Już wkrótce",
+            },
+        },
     },
 
     about: {
-        section: "O mnie",
+        eyebrow: "System działania",
+        titleLine1: "Jak",
+        titleLine2: "buduję.",
 
-        title: "Dlaczego tworzę.",
+        principles: {
+            problem: {
+                number: "01",
+                title: "Zacznij od problemu",
+                description:
+                    "Użyteczne produkty zaczynają się od zrozumienia tego, czego naprawdę potrzebują ludzie — nie od wyboru technologii.",
+            },
 
-        paragraph1:
-            "Nie chcę budować swojej kariery na robieniu minimum.",
+            systems: {
+                number: "02",
+                title: "Myśl systemowo",
+                description:
+                    "Zamieniam jednorazowe rozwiązania w skalowalne wzorce, workflow i narzędzia, które stale tworzą wartość.",
+            },
 
-        paragraph2:
-            "Chcę czegoś więcej niż tradycyjnej pracy. Chcę tworzyć produkty, budować systemy i rozwiązywać problemy, które realnie poprawiają życie ludzi.",
-
-        paragraph3:
-            "Tutaj dokumentuję ten proces. Każdy projekt, każde wyzwanie i każda misja przybliżają mnie do inżyniera, którym chcę być.",
+            ship: {
+                number: "03",
+                title: "Twórz i ucz się",
+                description:
+                    "Działający software prowadzi do lepszych pytań. Prototypuję, mierzę i ulepszam poprzez prawdziwy feedback.",
+            },
+        },
     },
 
-    missionStatus: {
-        title: "Status Misji",
+    capabilities: {
+        eyebrow: "Kompetencje",
 
-        currentObjective: "Aktualny Cel",
-        currentObjectiveValue: "Zostać Software Engineerem.",
-
-        sideQuest: "Misja Poboczna",
-        sideQuestValue: "Pomagać ludziom tworzyć piękne ogrody.",
-
-        nextExpansion: "Kolejny Etap",
-        nextExpansionValue: "Tworzyć produkty, które ułatwiają życie.",
-    },
-
-    skillTree: {
-        section: "Wartości",
-
-        title: "Jak myślę.",
-
-        cards: [
-            {
-                title: "Tworzę Produkty",
-
-                description:
-                    "Lubię zamieniać pomysły w produkty rozwiązujące prawdziwe problemy i tworzące wartość.",
-            },
-
-            {
-                title: "Myślę Systemowo",
-
-                description:
-                    "Wolę budować skalowalne systemy niż wielokrotnie rozwiązywać ten sam problem.",
-            },
-
-            {
-                title: "Nieustannie się Rozwijam",
-
-                description:
-                    "Każdy projekt jest kolejną okazją do nauki, rozwoju i stawania się lepszym inżynierem.",
-            },
+        items: [
+            "INŻYNIERIA PRODUKTU",
+            "AI & AUTOMATYZACJA",
+            "MYŚLENIE SYSTEMOWE",
+            "STRATEGIA PRODUKTU",
         ],
     },
-
-    bossBattles: {
-        section: "Projekty",
-
-        title: "Każdy projekt ukończony.",
-
-        description:
-            "Każdy projekt wykraczał poza moją strefę komfortu. Każde wyzwanie pozwoliło mi zdobyć nowe umiejętności i stać się lepszym inżynierem oprogramowania.",
-
-        projects: [
-            {
-                boss: "Boss #01",
-                status: "Ukończony",
-
-                name: "TomekGardens",
-
-                description:
-                    "Mój własny biznes ogrodniczy i strona internetowa stworzona w React, która prezentuje moje usługi, realizacje i ułatwia klientom kontakt.",
-
-                difficulty: 5,
-
-                image: "/images/tomekgardens.webp",
-
-                imagePosition: "object-[center_70%] lg:object-[center_50%]",
-
-                rewardsTitle: "Zdobyte umiejętności",
-
-                battleButton: "Odwiedź stronę",
-
-                hoverButton: "Odkryj?",
-
-                sourceButton: "TomekGardens",
-
-                href: "https://tomekgardens.com",
-
-                socialLinks: [
-                    {
-                        label: "Instagram",
-                        href: "https://www.instagram.com/tomekgardens/",
-                        icon: "instagram",
-                    },
-                    {
-                        label: "Facebook",
-                        href: "https://www.facebook.com/tomekgardens",
-                        icon: "facebook",
-                    },
-                    {
-                        label: "TikTok",
-                        href: "https://www.tiktok.com/@tomekgardens",
-                        icon: "tiktok",
-                    },
-                ],
-
-                skills: [
-                    {
-                        icon: "entrepreneurship",
-                        label: "Przedsiębiorczość",
-                    },
-                    {
-                        icon: "advertising",
-                        label: "Marketing",
-                    },
-                    {
-                        icon: "gardening",
-                        label: "Ogrodnictwo",
-                    },
-                    {
-                        icon: "product",
-                        label: "Tworzenie produktów",
-                    },
-                ],
-            },
-            {
-                boss: "Boss #02",
-                status: "Ukończony",
-
-                name: "Slimter",
-
-                description:
-                    "Strona internetowa oparta na WordPressie, poświęcona edukacji na temat otyłości i porównywaniu metod leczenia, z naciskiem na dostępność i responsywność.",
-
-                difficulty: 5,
-
-                image: "/images/slimter.webp",
-
-                imagePosition: "object-[40%_center]",
-
-                rewardsTitle: "Zdobyte umiejętności",
-
-                battleButton: "Odwiedź stronę",
-                hoverButton: "Odkryj?",
-
-                historyButton: "Przeczytaj historię",
-                historyHref: "/boss/slimter",
-
-                href: "https://slimter.com",
-                github: "#",
-
-                skills: [
-                    {
-                        icon: "wordpress",
-                        label: "WordPress",
-                    },
-                    {
-                        icon: "javascript",
-                        label: "JavaScript",
-                    },
-                    {
-                        icon: "css",
-                        label: "CSS",
-                    },
-                    {
-                        icon: "accessibility",
-                        label: "Dostępność",
-                    },
-                ],
-            },
-            {
-                boss: "Boss #03",
-                status: "Ukończony",
-
-                name: "Engineer Portfolio",
-
-                description:
-                    "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne oraz rozwój jako inżyniera oprogramowania.",
-
-                difficulty: 5,
-
-                image: "/images/portfolio-home.webp",
-
-                imagePosition: "object-[30%_center]",
-
-                rewardsTitle: "Zdobyte umiejętności",
-
-                battleButton: "Zobacz projekt",
-
-                hoverButton: "Gotowy?",
-
-                sourceButton: "Kod źródłowy",
-
-                href: "/boss/engineer-portfolio",
-
-                github: "https://github.com/TomaszZdebiakcode/digital-portfolio",
-
-                skills: [
-                    {
-                        icon: "react",
-                        label: "React",
-                    },
-                    {
-                        icon: "next",
-                        label: "Next.js",
-                    },
-                    {
-                        icon: "tailwind",
-                        label: "Tailwind CSS",
-                    },
-                    {
-                        icon: "responsive",
-                        label: "Responsywny UI",
-                    },
-                ],
-            },
-            {
-                boss: "Boss #04",
-                status: "W trakcie rozwoju",
-
-                name: "Bottle Project",
-
-                description:
-                    "Przyszły projekt oparty na rzeczywistym produkcie, łączący technologię, rozwój produktu oraz myślenie inwestycyjne.",
-
-                difficulty: 5,
-
-                image: "/images/bottle_project.webp",
-
-                imagePosition: "object-center",
-
-                rewardsTitle: "Odblokowane nagrody",
-
-                battleButton: "Już wkrótce",
-
-                hoverButton: "Sprawdź?",
-
-                href: "/boss/bottle-project",
-
-                skills: [
-                    {
-                        icon: "product",
-                        label: "Tworzenie produktu",
-                    },
-                    {
-                        icon: "investment",
-                        label: "Inwestowanie",
-                    },
-                    {
-                        icon: "technology",
-                        label: "Technologia",
-                    },
-                    {
-                        icon: "entrepreneurship",
-                        label: "Przedsiębiorczość",
-                    },
-                ],
-            },
-        ],
-    },
-
-    inventory: {
-        section: "ARSENAŁ",
-        title: "Narzędzia, które zamieniam w przewagę.",
-        description:
-            "Łączę AI, automatyzację i dobre wdrożenia, żeby szybciej budować produkty i eliminować powtarzalną pracę.",
-
-        ai: {
-            title: "AI",
-            description:
-                "Wykorzystuję AI jako część codziennego workflow — od analizy problemów i prototypowania po rozwój produktu i pracę z dokumentacją.",
-            tags: [
-                "AI-assisted development",
-                "Prompting",
-                "Prototyping",
-            ],
-        },
-
-        automation: {
-            title: "Automation",
-            description:
-                "Automatyzuję powtarzalne zadania, integracje i przepływy pracy, żeby ograniczyć ręczną pracę i odzyskać czas.",
-            tags: [
-                "Workflows",
-                "APIs",
-                "Integrations",
-            ],
-        },
-
-        implementation: {
-            title: "Implementation",
-            description:
-                "Przekładam pomysły na działające produkty — od pierwszego prototypu przez integrację aż po wdrożenie.",
-            tags: [
-                "Next.js",
-                "React",
-                "TypeScript",
-                "WordPress",
-            ],
-        },
-
-        optimization: {
-            title: "Optimization",
-            description:
-                "Szukam miejsc, w których można uprościć proces, skrócić czas wykonania zadania i poprawić sposób pracy.",
-            tags: [
-                "Performance",
-                "UX",
-                "Process optimization",
-            ],
-        },
-    },
-
 
     contact: {
-        section: "Ostatni Boss",
-
-        titleStart: "Stwórzmy",
-
-        titleMiddle: "Coś",
-
-        titleEnd: "Wyjątkowego.",
-
-        description:
-            "Obecnie szukam możliwości rozwoju jako Software Engineer, projektów freelance oraz współpracy. Jeśli masz pomysł, wyzwanie lub po prostu chcesz się skontaktować, rozpocznijmy kolejną misję razem.",
-
-        emailButton: "Wyślij Email",
+        eyebrow: "Masz wartościowy problem?",
+        titleLine1: "Zbudujmy",
+        titleLine2: "użyteczną rzecz.",
+        email: "TomaszZdebiak@gmail.com",
+        linkedin: "LinkedIn",
     },
 
     slimterStory: {
@@ -453,134 +216,119 @@ const pl = {
 
     },
 
-    developerCard: {
-        availability: "Dostępny",
-    },
-
     engineerPortfolioStory: {
-        back: "Powrót do projektów",
-
+        back: "Wróć do projektów",
         eyebrow: "BOSS #03",
         status: "✓ Pokonany",
-
-        title: "Portfolio Inżyniera",
-
-        intro:
-            "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne oraz rozwój jako inżynier oprogramowania.",
-
+        title: "Engineer Portfolio",
+        intro: "Moje cyfrowe portfolio prezentujące projekty, umiejętności techniczne i rozwój jako inżyniera oprogramowania.",
         visitPortfolio: "Odwiedź portfolio",
-
         skills: [
-            {
-                label: "React",
-                icon: "react",
-            },
-            {
-                label: "Next.js",
-                icon: "nextjs",
-            },
-            {
-                label: "TypeScript",
-                icon: "typescript",
-            },
-            {
-                label: "Responsywny interfejs",
-                icon: "responsive",
-            },
+            { label: "React", icon: "react" },
+            { label: "Next.js", icon: "nextjs" },
+            { label: "TypeScript", icon: "typescript" },
+            { label: "Responsywny UI", icon: "responsive" },
         ],
-
         about: {
             eyebrow: "O MNIE",
             title: "Kim jestem?",
-
             paragraphs: [
-                "Jestem studentem trzeciego roku inżynierii oprogramowania, specjalizującym się w tworzeniu gier. Rozwijam swoje umiejętności programistyczne zarówno na uczelni, jak i poprzez własne projekty, skupiając się na tworzeniu praktycznych i dopracowanych produktów.",
-
-                "Poza studiami prowadzę również własną działalność ogrodniczą, która nauczyła mnie odpowiedzialności, organizacji oraz podejmowania decyzji w rzeczywistych sytuacjach biznesowych.",
-
-                "Obecnie pracuję nad dwoma projektami, które już wkrótce ujrzą światło dzienne. Engineer Portfolio jest miejscem, w którym dokumentuję ten proces — od pierwszego pomysłu aż po gotowy produkt.",
+                "Jestem studentem trzeciego roku inżynierii oprogramowania, specjalizującym się w tworzeniu gier. Rozwijam umiejętności programistyczne zarówno na studiach, jak i poprzez własne projekty, skupiając się na tworzeniu praktycznych i dopracowanych produktów.",
+                "Równolegle ze studiami prowadzę własną firmę ogrodniczą, która nauczyła mnie odpowiedzialności, organizacji oraz podejmowania decyzji w realnych sytuacjach biznesowych.",
+                "Obecnie pracuję nad dwoma projektami, które w niedalekiej przyszłości ujrzą światło dzienne. Engineer Portfolio jest miejscem, w którym dokumentuję ten proces — od pierwszej koncepcji do gotowego produktu.",
             ],
-
             points: [
                 "Student trzeciego roku inżynierii oprogramowania",
-                "Własna działalność ogrodnicza",
+                "Własna firma ogrodnicza",
                 "Dwa projekty obecnie w fazie rozwoju",
                 "Nauka poprzez praktyczne tworzenie",
             ],
         },
-
         gallery: {
             eyebrow: "PORTFOLIO",
-            title: "Od pomysłu do produktu.",
-
-            description:
-                "Portfolio zostało zaprojektowane jako miejsce prezentujące moje doświadczenie, projekty oraz rozwój jako inżynier oprogramowania.",
-
+            title: "Od koncepcji do produktu.",
+            description: "Cyfrowe portfolio stworzone po to, by pokazać, kim jestem, co tworzę, jak pracuję i w jakim kierunku rozwijam się jako inżynier oprogramowania.",
             items: [
-                {
-                    title: "Strona główna",
-                    description:
-                        "Pierwszy punkt kontaktu z portfolio — minimalistyczny interfejs skupiony na mnie, moich projektach i tym, co tworzę.",
-                },
-                {
-                    title: "O mnie",
-                    description:
-                        "Sekcja przedstawiająca moje podejście do tworzenia oprogramowania oraz ścieżkę, którą obecnie podążam.",
-                },
-                {
-                    title: "Projekty",
-                    description:
-                        "Miejsce, w którym prezentuję projekty, nad którymi pracuję, oraz technologie wykorzystywane do ich tworzenia.",
-                },
-                {
-                    title: "Arsenał",
-                    description:
-                        "Sekcja przedstawiająca narzędzia, technologie i sposób pracy, których używam, aby zamieniać pomysły w praktyczne rozwiązania.",
-                },
-                {
-                    title: "Kontakt",
-                    description:
-                        "Prosty sposób na nawiązanie kontaktu i rozpoczęcie rozmowy.",
-                },
+                { title: "Home", description: "Główna strona portfolio — krótkie przedstawienie tego, kim jestem, co tworzę i w jakim kierunku się rozwijam." },
+                { title: "Info", description: "Sekcja przedstawiająca moje doświadczenie, tło oraz informacje dające szerszy kontekst mojej pracy jako inżyniera oprogramowania." },
+                { title: "Projects", description: "Zbiór wybranych projektów pokazujących, co stworzyłem, nad czym obecnie pracuję oraz jakich technologii używam." },
+                { title: "About", description: "Bliższe spojrzenie na moje umiejętności, narzędzia i technologie, których używam do zamieniania pomysłów w działające produkty." },
+                { title: "Contact", description: "Prosta sekcja kontaktowa, która pozwala szybko się ze mną skontaktować i rozpocząć rozmowę." },
             ],
         },
-
         work: {
             eyebrow: "CO TWORZĘ",
             title: "Więcej niż kod.",
-
-            description:
-                "Interesuje mnie cały proces tworzenia produktu — od początkowego pomysłu i projektu, przez implementację, aż po gotowe rozwiązanie.",
-
+            description: "Interesuje mnie cały proces tworzenia produktu — od pierwszego pomysłu i projektu, przez implementację, aż po gotowe rozwiązanie.",
             items: [
                 "Nowoczesne aplikacje webowe",
                 "Interfejsy użytkownika",
-                "Systemy i logika aplikacji",
+                "Systemy aplikacyjne i logika",
                 "Responsywne doświadczenia",
-                "Projekty tworzone od podstaw",
+                "Projekty budowane od podstaw",
                 "Eksperymentowanie z nowymi technologiami",
+            ],
+        },
+        next: {
+            eyebrow: "CO DALEJ?",
+            title: "To dopiero początek.",
+            description: "Portfolio będzie rozwijać się razem ze mną — będą pojawiać się tutaj nowe projekty, doświadczenia i kolejne kroki mojego rozwoju.",
+        },
+    },
+
+    bottleStory: {
+        back: "Wróć do projektów",
+        project: "Projekt 04",
+        status: "W trakcie rozwoju",
+        title: "Bottle Project",
+        intro: "Fizyczny produkt na styku technologii i inwestycji.",
+        tags: ["W rozwoju", "Produkt"],
+        imageAlt: "Bottle Project",
+
+        idea: {
+            eyebrow: "Pomysł",
+            title: "Pomysł na produkt, który wciąż nabiera kształtu.",
+            paragraphs: [
+                "Bottle Project to projekt produktu znajdujący się na wczesnym etapie rozwoju. Celem jest zbadanie przestrzeni pomiędzy fizycznym produktem, technologią i realnym potencjałem inwestycyjnym.",
+                "Zamiast pokazywać gotowy produkt, zanim będzie na to czas, ta strona pozostawia projekt celowo otwarty. Koncepcja, technologia i model biznesowy są nadal rozwijane.",
+            ],
+        },
+
+        exploring: {
+            eyebrow: "Nad czym pracuję",
+            title: "Trzy strony produktu.",
+            items: [
+                {
+                    number: "01",
+                    title: "Produkt",
+                    text: "Koncepcja fizycznego produktu łączącego technologię, użyteczność i potencjał inwestycyjny.",
+                },
+                {
+                    number: "02",
+                    title: "Technologia",
+                    text: "Sprawdzam, jak fizyczny obiekt może zostać połączony z użyteczną warstwą cyfrową.",
+                },
+                {
+                    number: "03",
+                    title: "Biznes",
+                    text: "Patrzę szerzej niż na sam przedmiot — od pomysłu na produkt po powtarzalny model biznesowy.",
+                },
             ],
         },
 
         next: {
-            eyebrow: "CO DALEJ?",
-            title: "To dopiero początek.",
-
-            description:
-                "Portfolio będzie rozwijać się razem ze mną — w miarę mojego rozwoju będą pojawiać się tutaj nowe projekty, doświadczenia i kolejne kroki.",
+            eyebrow: "Bottle Project",
+            title: "Więcej, kiedy będzie gotowy.",
+            description: "Projekt jest nadal w fazie rozwoju. Kolejna wersja historii pojawi się, gdy będzie już produkt wart pokazania.",
+            contact: "Porozmawiajmy",
         },
     },
 
     footer: {
-        eyebrow: "BUILD CREATE DEFEAT",
-        lineOne: "Wciąż tworzę. Wciąż się uczę. Wciąż się rozwijam",
-        lineTwo: "Kolejny poziom zawsze jest przede mną",
+        copyright: "© 2026 Tomasz Zdebiak",
+        tagline: "Designed for clarity. Built to evolve.",
         backToTop: "Wróć na górę",
-        copyright: "Wszystkie prawa zastrzeżone",
-        designedBy: "Designed & Developed by",
     },
 };
-
-
 
 export default pl;
