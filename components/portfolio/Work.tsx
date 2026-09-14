@@ -50,12 +50,12 @@ const projects: Project[] = [
     {
         number: "02",
         key: "slimter",
-        href: "https://slimter.pl",
+        href: "https://slimter.com",
         image: "/images/slimter.webp",
         links: [
             {
                 label: "Website",
-                href: "https://slimter.pl",
+                href: "https://slimter.com",
                 external: true,
             },
             {
